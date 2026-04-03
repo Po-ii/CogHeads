@@ -1,0 +1,1736 @@
+{
+"general": {
+"version": "25"
+},
+"project": {
+"game": {
+"languages": {
+"english": "1",
+"os": "1",
+"native": "English",
+"default": "English"
+},
+"name": "CogHeads",
+"version": "1.0.0",
+"width": "1408",
+"height": "768",
+"label_color": "FFFFFF",
+"font_color_menu1": "FFFFFF",
+"font_color_menu2": "57E657",
+"font_color_menu3": "FFFF60",
+"font_color_menu4": "FFFFFF",
+"font_color_credits": "FFFFFF",
+"font_color_credits2": "57E657",
+"light_ambient": "255",
+"merge_audio_text": "1",
+"font": {
+"name": "Cartoon",
+"meta": {
+"aid": "6d6bddb7520a0dc2"
+},
+"textures": [
+{
+"aid": "b6a2d211774ba316"
+}
+]
+},
+"savegame": {
+"chapters": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+},
+"dialog": {
+"speed": "Fast",
+"prompt_color": "FFFFFF",
+"prompt_door_color": "57E657",
+"def_choice_text_color": "FFFFFF",
+"def_choice_text_highlight_color": "57E657",
+"def_choice_back_color": "000000C0",
+"def_talk_text_color": "FFFFFF",
+"comics_talk_text_color": "FFFFFF",
+"movie_margin": "24",
+"movie_talk_text_color": "FFFFFF",
+"vn_choice_text_color": "FFFFFF",
+"vn_choice_text_highlight_color": "57E657",
+"vn_talk_name_color": "FFFFFF",
+"vn_talk_text_color": "FFFFFF",
+"cinematic_text_color": "FFFFFF",
+"cinematic_margin": "24",
+"layouts": {
+"comicsTalk": {
+"back": {
+"x": 42,
+"y": 42,
+"w": 42,
+"h": 42
+},
+"text": {
+"x": 42,
+"y": 42,
+"w": 42,
+"h": 42
+},
+"width": 128,
+"height": 128
+},
+"vnChoice": {
+"text": {
+"x": 83,
+"y": 55,
+"w": 83,
+"h": 55
+},
+"icon": {
+"x": 100,
+"y": 66,
+"w": 50,
+"h": 33
+},
+"width": 250,
+"height": 165
+}
+}
+},
+"configs": [
+{
+"platform": "WINDOWS",
+"name": "windows"
+},
+{
+"platform": "WINDOWS",
+"name": "play_windows"
+},
+{
+"platform": "WEB",
+"name": "play_web",
+"distribution": "Local"
+}
+],
+"palette": {
+"Blue": 16744448,
+"Brown": 2121888,
+"Cyan": 15266376,
+"DarkGreen": 32768,
+"Gold": 2138336,
+"Gray": 10398381,
+"Green": 5760599,
+"Magenta": 15357406,
+"Maroon": 160,
+"Orange": 33023,
+"Pink": 12632319,
+"Purple": 9519498,
+"Red": 3937500,
+"Silver": 12632256,
+"Yellow": 6356991,
+"White": 16777215,
+"User": 16777215,
+"user": 16777215
+},
+"layout": {
+"autosave": {
+"active": true,
+"width": 128,
+"height": 128
+},
+"bag": {
+"active": true,
+"x": 1688,
+"width": 128,
+"height": 128,
+"horz": 2,
+"rclick": true
+},
+"detach": {
+"y": 128,
+"width": 128,
+"height": 128,
+"horz": 2,
+"bag": "Enabled"
+},
+"items": {
+"active": true,
+"y": 880,
+"width": 1820,
+"height": 128,
+"horz": 3,
+"vert": 2,
+"bag": "Enabled"
+},
+"prompt": {
+"active": true,
+"x": 160,
+"y": 16,
+"width": 1500,
+"height": 32,
+"horz": 3
+},
+"magnify": {
+"active": true,
+"width": 400,
+"height": 400,
+"zoom": 200
+},
+"menu": {
+"active": true,
+"x": 1688,
+"y": 128,
+"width": 128,
+"height": 128,
+"horz": 2,
+"bag": "Enabled"
+},
+"players": {
+"x": 1688,
+"y": 256,
+"width": 128,
+"height": 512,
+"vert": 3,
+"bag": "Enabled"
+},
+"shutup": {
+"active": true,
+"x": 1688,
+"width": 128,
+"height": 128,
+"horz": 2
+}
+},
+"meta": {
+"nextAssetID": 10
+}
+},
+"puzzle": {
+"board": {
+"nextid": 8,
+"boxes": [
+{
+"type": 257,
+"id": 1,
+"name": "start",
+"plugs": [
+{
+"id": 2,
+"type": 3,
+"trgs": [
+6
+]
+}
+]
+},
+{
+"type": 260,
+"id": 3,
+"name": "end",
+"x": 200,
+"plugs": [
+{
+"id": 4,
+"type": 2
+}
+]
+},
+{
+"type": 256,
+"id": 5,
+"name": "#puzzle",
+"x": 100,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3,
+"trgs": [
+4
+]
+}
+]
+}
+]
+}
+},
+"logics": [
+{
+"sid": 2,
+"uid": "L_BEDROOM",
+"graph": {
+"board": {
+"nextid": 15,
+"boxes": [
+{
+"type": 775,
+"id": 5,
+"x": 623,
+"y": 325,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3
+}
+],
+"scene": "S_LIVINGROOM"
+},
+{
+"type": 1285,
+"id": 8,
+"x": 438,
+"y": 326,
+"plugs": [
+{
+"id": 9,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_BEDROOM",
+"label": "LIVINGROOM"
+}
+]
+}
+}
+},
+{
+"sid": 3,
+"uid": "L_GAME",
+"content": {
+"start": true
+},
+"graph": {
+"board": {
+"nextid": 8,
+"x": 451,
+"y": 194,
+"boxes": [
+{
+"type": 1309,
+"id": 3,
+"y": 100,
+"plugs": [
+{
+"id": 4,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"mode": "NEW"
+},
+{
+"type": 789,
+"id": 5,
+"x": 200,
+"y": 100,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3
+}
+],
+"player": "P_HERO",
+"change": "True"
+}
+]
+}
+}
+},
+{
+"sid": 7,
+"uid": "L_LIVINGROOM",
+"graph": {
+"board": {
+"nextid": 20,
+"x": 245,
+"y": 132,
+"boxes": [
+{
+"type": 775,
+"id": 10,
+"x": 344,
+"y": 177,
+"plugs": [
+{
+"id": 11,
+"type": 2
+},
+{
+"id": 12,
+"type": 3
+}
+],
+"scene": "S_BEDROOM"
+},
+{
+"type": 1285,
+"id": 13,
+"x": 164,
+"y": 165,
+"plugs": [
+{
+"id": 14,
+"type": 3,
+"trgs": [
+11
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_LIVINGROOM",
+"label": "BEDROOM"
+}
+]
+}
+}
+}
+],
+"scenes": [
+{
+"sid": 1,
+"uid": "S_BEDROOM",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"nextID": 9,
+"zoom": 67,
+"x": 24,
+"y": 119
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "23173b7c3a8b5c06"
+},
+"texture": {
+"width": 1408,
+"height": 768,
+"rects": [
+{
+"w": 1408,
+"h": 768
+}
+],
+"textures": [
+{
+"aid": "8db38ab1e493c07c"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 663,
+"y": 769,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FLASH",
+"uid": "O_FLASH",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 300,
+"y": 505,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FLASH2",
+"uid": "O_FLASH",
+"id": 7,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 51,
+"y": 459,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FLASH3",
+"uid": "O_FLASH",
+"id": 8,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 447,
+"y": 345,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+],
+"labels": [
+{
+"name": "LIVINGROOM",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"y": 226,
+"width": 118,
+"height": 502
+},
+{
+"name": "NOTES",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 252,
+"y": 462,
+"width": 98,
+"height": 82
+},
+{
+"name": "WINDOW",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 367,
+"y": 198,
+"width": 158,
+"height": 231
+}
+]
+},
+{
+"sid": 6,
+"uid": "S_LIVINGROOM",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 85,
+"nextID": 9,
+"x": -44,
+"y": 20
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "9f82262d9d0459c1"
+},
+"texture": {
+"width": 1408,
+"height": 768,
+"rects": [
+{
+"w": 1408,
+"h": 768
+}
+],
+"textures": [
+{
+"aid": "13d3ce61a1a04eee"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 701,
+"y": 768,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FLASH",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 768,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_FLASH",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 160,
+"y": 397,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FLASH2",
+"uid": "O_FLASH",
+"id": 7,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1263,
+"y": 401,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "FLASH3",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 768,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_FLASH",
+"id": 8,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1013,
+"y": 403,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+],
+"labels": [
+{
+"name": "BEDROOM",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1129,
+"y": 179,
+"width": 245,
+"height": 415
+},
+{
+"name": "PAD",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 111,
+"y": 346,
+"width": 97,
+"height": 101
+},
+{
+"name": "OUTSIDE",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 965,
+"y": 252,
+"width": 105,
+"height": 294
+}
+]
+}
+],
+"objects": [
+{
+"sid": 4,
+"uid": "O_HERO",
+"content": {
+"bbox": true,
+"width": 32,
+"height": 32
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "14d7e0cc5701333b"
+}
+},
+"x": 7,
+"y": 5,
+"w": 17,
+"h": 23
+},
+{
+"image": {
+"hi": {
+"aid": "42eb0f3b3e76ac2f"
+}
+},
+"x": 11,
+"y": 10,
+"w": 11,
+"h": 11
+},
+{
+"image": {
+"hi": {
+"aid": "00c7473bf3e9337e"
+}
+},
+"x": 15,
+"y": 15,
+"w": 1,
+"h": 3
+},
+{
+"image": {
+"hi": {
+"aid": "b325ebf6719bc88d"
+}
+},
+"x": 7,
+"y": 5,
+"w": 17,
+"h": 23
+},
+{
+"image": {
+"hi": {
+"aid": "3e1bee4d99509a06"
+}
+},
+"x": 11,
+"y": 10,
+"w": 11,
+"h": 11
+},
+{
+"image": {
+"hi": {
+"aid": "1cf9cfa6753fda76"
+}
+},
+"x": 15,
+"y": 15,
+"w": 1,
+"h": 3
+},
+{
+"image": {
+"hi": {
+"aid": "68b71bde6f778edf"
+}
+},
+"x": 14,
+"y": 15,
+"w": 3,
+"h": 3
+},
+{
+"image": {
+"hi": {
+"aid": "7ead2180156f75c8"
+}
+},
+"x": 14,
+"y": 15,
+"w": 3,
+"h": 3
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 17,
+"h": 23
+},
+{
+"index": 1,
+"index2": -1,
+"x": 17,
+"w": 11,
+"h": 11
+},
+{
+"index": 2,
+"index2": -1,
+"y": 23,
+"w": 1,
+"h": 3
+},
+{
+"index": 6,
+"index2": -1,
+"x": 1,
+"y": 23,
+"w": 3,
+"h": 3
+},
+{
+"index": 3
+},
+{
+"index": 4,
+"index2": 1
+},
+{
+"index": 5,
+"index2": 2
+},
+{
+"index": 7,
+"index2": 6
+}
+],
+"packs": [
+{
+"count": 8,
+"collider": {
+"aid": "be73001eadbe6ceb"
+},
+"texture": {
+"aid": "a919e78c945d1ba8"
+}
+}
+]
+}
+},
+{
+"sid": 9,
+"uid": "O_FLASH",
+"content": {
+"bbox": true,
+"width": 32,
+"height": 32,
+"x": 16,
+"y": 17
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "1c18200f0b11cfc6"
+},
+"lo": {
+"aid": "1fce6bac820e20c6"
+}
+},
+"x": 7,
+"y": 5,
+"w": 17,
+"h": 23
+},
+{
+"image": {
+"hi": {
+"aid": "649fd671edd8524d"
+},
+"lo": {
+"aid": "1f487692dd18ab55"
+}
+},
+"x": 11,
+"y": 10,
+"w": 11,
+"h": 11
+},
+{
+"image": {
+"hi": {
+"aid": "0556b9e4304d0f54"
+},
+"lo": {
+"aid": "8d97a2f11bc502b8"
+}
+},
+"x": 15,
+"y": 15,
+"w": 1,
+"h": 3
+},
+{
+"image": {
+"hi": {
+"aid": "ad3affffe112633e"
+},
+"lo": {
+"aid": "3135a179d313c17b"
+}
+},
+"x": 14,
+"y": 15,
+"w": 3,
+"h": 3
+},
+{
+"image": {
+"hi": {
+"aid": "622151b242f51008"
+},
+"lo": {
+"aid": "c2d025a297849dc3"
+}
+},
+"x": 15,
+"y": 15,
+"w": 1,
+"h": 3
+},
+{
+"image": {
+"hi": {
+"aid": "68ef3940cdc16d12"
+},
+"lo": {
+"aid": "189e9b4e46dfad88"
+}
+},
+"x": 11,
+"y": 10,
+"w": 11,
+"h": 11
+},
+{
+"image": {
+"hi": {
+"aid": "4b89fafdbf0a066b"
+},
+"lo": {
+"aid": "b098c6fe40733711"
+}
+},
+"x": 7,
+"y": 5,
+"w": 17,
+"h": 23
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 17,
+"h": 23
+},
+{
+"index": 1,
+"index2": -1,
+"x": 17,
+"w": 11,
+"h": 11
+},
+{
+"index": 2,
+"index2": -1,
+"y": 23,
+"w": 1,
+"h": 3
+},
+{
+"index": 3,
+"index2": -1,
+"x": 1,
+"y": 23,
+"w": 3,
+"h": 3
+},
+{
+"index": 4,
+"index2": 2
+},
+{
+"index": 5,
+"index2": 1
+},
+{
+"index": 6
+}
+],
+"packs": [
+{
+"count": 7,
+"collider": {
+"aid": "7e90030d1a8dc82e"
+},
+"texture": {
+"aid": "ee4e901c3761fa2e"
+}
+}
+]
+}
+}
+],
+"players": [
+{
+"sid": 5,
+"uid": "P_HERO",
+"content": {
+"scroll_smooth": 50,
+"zoom_smooth": 50,
+"path_color": -1,
+"object": "O_HERO",
+"scene": "S_BEDROOM"
+},
+"icons": [
+{
+"image": {
+"aid": "b47db129044cf53c"
+},
+"texture": {
+"aid": "d5c9678337ca325e"
+}
+},
+{},
+{},
+{}
+]
+}
+],
+"images": {
+"APP_ANDROID": {
+"image": {
+"aid": "51f0e68f86dfcc6f"
+},
+"texture": {
+"aid": "fcbdb6e4afbf937e"
+}
+},
+"APP_IOS": {
+"image": {
+"aid": "15ab57da94fae622"
+},
+"texture": {
+"aid": "50bc7dd4e21236b8"
+}
+},
+"APP_WINDOWS": {
+"image": {
+"aid": "23183dc467c09700"
+},
+"texture": {
+"aid": "92f5b12e81233ae9"
+}
+},
+"DIALOG_COMICS_TALK": {
+"image": {
+"aid": "dba56d9aff1cdb51"
+},
+"texture": {
+"aid": "31b8968e5e46aea9"
+}
+},
+"DIALOG_VN_CHOICE": {
+"image": {
+"aid": "3998c42998533669"
+},
+"texture": {
+"aid": "dbb099b1fd5b4189"
+}
+},
+"CURSOR": {
+"image": {
+"aid": "31e3d8d236449007"
+},
+"texture": {
+"aid": "396efea34fc56d3a"
+}
+},
+"LAYOUT_AUTOSAVE": {
+"image": {
+"aid": "2794f5190ab01103"
+},
+"texture": {
+"aid": "dc114dadec635194"
+}
+},
+"LAYOUT_BAG": {
+"image": {
+"aid": "6fa30b93685114e5"
+},
+"texture": {
+"aid": "062f5c4a39052ba4"
+}
+},
+"LAYOUT_MAGNIFY": {
+"image": {
+"aid": "b54365448bd8ea5f"
+},
+"texture": {
+"aid": "eb1e56597d9ef9fc"
+}
+},
+"LAYOUT_MENU": {
+"image": {
+"aid": "422ff349a86659f2"
+},
+"texture": {
+"aid": "0daf7262c872abc6"
+}
+},
+"LAYOUT_OBJECT": {
+"image": {
+"aid": "5ffb5220ff998087"
+},
+"texture": {
+"aid": "1cd6036eae687e9b"
+}
+},
+"LAYOUT_OBJECT_PREV": {
+"image": {
+"aid": "30d4566ca8a5dd81"
+},
+"texture": {
+"aid": "c431866143f55aa2"
+}
+},
+"LAYOUT_OBJECT_NEXT": {
+"image": {
+"aid": "219e5889d1b92250"
+},
+"texture": {
+"aid": "11931eaa113880da"
+}
+},
+"LAYOUT_PLAYER": {
+"image": {
+"aid": "a3cc6dc3e8ac74ac"
+},
+"texture": {
+"aid": "644c2042440a946d"
+}
+},
+"LAYOUT_SHUTUP": {
+"image": {
+"aid": "5efb17b73f8de189"
+},
+"texture": {
+"aid": "3aac15ed7f831175"
+}
+},
+"MENU": {
+"image": {
+"aid": "8a411724f6ea7690"
+},
+"texture": {
+"aid": "03e3b598cc8f8735"
+}
+}
+}
+}

@@ -12,8 +12,8 @@
 },
 "name": "CogHeads",
 "version": "1.0.0",
-"width": "1408",
-"height": "768",
+"width": "1380",
+"height": "752",
 "label_color": "FFFFFF",
 "font_color_menu1": "FFFFFF",
 "font_color_menu2": "57E657",
@@ -218,6 +218,8 @@
 "puzzle": {
 "board": {
 "nextid": 8,
+"x": 531,
+"y": 439,
 "boxes": [
 {
 "type": 257,
@@ -567,10 +569,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"nextID": 9,
-"zoom": 67,
-"x": -267,
-"y": 54
+"nextID": 10,
+"zoom": 69,
+"x": -198,
+"y": -52
 },
 "layers": {
 "BACK": {
@@ -578,20 +580,20 @@
 "opacity_max": 100,
 "opacity_speed": 100,
 "image": {
-"aid": "23173b7c3a8b5c06"
+"aid": "daeaeb29b392415c"
 },
 "texture": {
-"width": 1408,
-"height": 768,
+"width": 1380,
+"height": 752,
 "rects": [
 {
-"w": 1408,
-"h": 768
+"w": 1380,
+"h": 752
 }
 ],
 "textures": [
 {
-"aid": "8db38ab1e493c07c"
+"aid": "73c4a07bb28c8b0f"
 }
 ]
 }
@@ -700,166 +702,6 @@
 {},
 {}
 ]
-},
-{
-"name": "FLASH",
-"uid": "O_FLASH",
-"id": 6,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 300,
-"y": 505,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH2",
-"uid": "O_FLASH",
-"id": 7,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 51,
-"y": 459,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH3",
-"uid": "O_FLASH",
-"id": 8,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 447,
-"y": 345,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-}
-],
-"labels": [
-{
-"name": "LIVINGROOM",
-"id": 2,
-"tags": [
-"",
-"",
-"",
-""
-],
-"y": 226,
-"width": 118,
-"height": 502
-},
-{
-"name": "NOTES",
-"id": 4,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 252,
-"y": 462,
-"width": 98,
-"height": 82
-},
-{
-"name": "WINDOW",
-"id": 5,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 367,
-"y": 198,
-"width": 158,
-"height": 231
 }
 ]
 },
@@ -869,34 +711,16 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 67,
+"zoom": 69,
 "nextID": 9,
-"x": 36,
-"y": 71
+"x": 186,
+"y": 151
 },
 "layers": {
 "BACK": {
 "opacity_min": 100,
 "opacity_max": 100,
-"opacity_speed": 100,
-"image": {
-"aid": "9f82262d9d0459c1"
-},
-"texture": {
-"width": 1408,
-"height": 768,
-"rects": [
-{
-"w": 1408,
-"h": 768
-}
-],
-"textures": [
-{
-"aid": "13d3ce61a1a04eee"
-}
-]
-}
+"opacity_speed": 100
 },
 "MA": {
 "speed_x": 100,
@@ -1002,189 +826,6 @@
 {},
 {}
 ]
-},
-{
-"name": "FLASH",
-"depths": [
-{
-"a": 100,
-"b": 100
-},
-{
-"y": 768,
-"a": 100,
-"b": 100
-}
-],
-"uid": "O_FLASH",
-"id": 6,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 160,
-"y": 397,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH2",
-"uid": "O_FLASH",
-"id": 7,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 1263,
-"y": 401,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH3",
-"depths": [
-{
-"a": 100,
-"b": 100
-},
-{
-"y": 768,
-"a": 100,
-"b": 100
-}
-],
-"uid": "O_FLASH",
-"id": 8,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 1013,
-"y": 403,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-}
-],
-"labels": [
-{
-"name": "BEDROOM",
-"id": 1,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 1129,
-"y": 179,
-"width": 245,
-"height": 415
-},
-{
-"name": "PAD",
-"id": 4,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 111,
-"y": 346,
-"width": 97,
-"height": 101
-},
-{
-"name": "OUTSIDE",
-"id": 5,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 965,
-"y": 252,
-"width": 105,
-"height": 294
 }
 ]
 },
@@ -1194,107 +835,14 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 67,
+"zoom": 49,
 "nextID": 1
 },
 "layers": {
 "BACK": {
 "opacity_min": 100,
 "opacity_max": 100,
-"opacity_speed": 100,
-"image": {
-"aid": "6ba50e814bc96a64"
-},
-"texture": {
-"aid": "ea93bfa5023cb2ea"
-}
-},
-"MA": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
 "opacity_speed": 100
-},
-"MB": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"MC": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"MD": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FA": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FB": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FC": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FD": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-}
-}
-},
-{
-"sid": 13,
-"uid": "S_PAD",
-"content": {
-"light_ambient": -1,
-"light_blur": -1,
-"zoom": 67,
-"nextID": 1
-},
-"layers": {
-"BACK": {
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100,
-"image": {
-"aid": "ed4985695e048a47"
-},
-"texture": {
-"aid": "c1d76966ecdcf730"
-}
 },
 "MA": {
 "speed_x": 100,
@@ -1758,8 +1306,7 @@
 "scroll_smooth": 50,
 "zoom_smooth": 50,
 "path_color": -1,
-"object": "O_HERO",
-"scene": "S_BEDROOM"
+"object": "O_HERO"
 },
 "icons": [
 {

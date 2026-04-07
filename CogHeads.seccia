@@ -311,21 +311,6 @@
 "var_cmp": "==",
 "scene": "S_BEDROOM",
 "label": "LIVINGROOM"
-},
-{
-"type": 1285,
-"id": 15,
-"x": 439,
-"y": 462,
-"plugs": [
-{
-"id": 16,
-"type": 3
-}
-],
-"var_cmp": "==",
-"scene": "S_BEDROOM",
-"label": "NOTES"
 }
 ]
 }
@@ -385,8 +370,8 @@
 "uid": "L_LIVINGROOM",
 "graph": {
 "board": {
-"nextid": 46,
-"x": 294,
+"nextid": 56,
+"x": 198,
 "y": 61,
 "boxes": [
 {
@@ -425,35 +410,17 @@
 "label": "BEDROOM"
 },
 {
-"type": 1285,
-"id": 31,
-"x": 159,
-"y": 246,
-"plugs": [
-{
-"id": 32,
-"type": 3,
-"trgs": [
-34
-]
-}
-],
-"var_cmp": "==",
-"scene": "S_LIVINGROOM",
-"label": "OUTSIDE"
-},
-{
 "type": 775,
-"id": 33,
-"x": 351,
-"y": 257,
+"id": 51,
+"x": 335,
+"y": 267,
 "plugs": [
 {
-"id": 34,
+"id": 52,
 "type": 2
 },
 {
-"id": 35,
+"id": 53,
 "type": 3
 }
 ],
@@ -461,59 +428,21 @@
 },
 {
 "type": 1285,
-"id": 36,
-"x": 156,
-"y": 343,
+"id": 54,
+"x": 152,
+"y": 256,
 "plugs": [
 {
-"id": 37,
+"id": 55,
 "type": 3,
 "trgs": [
-41
+52
 ]
 }
 ],
 "var_cmp": "==",
 "scene": "S_LIVINGROOM",
-"label": "PAD"
-},
-{
-"type": 781,
-"id": 40,
-"x": 300,
-"y": 347,
-"plugs": [
-{
-"id": 41,
-"type": 2
-},
-{
-"id": 42,
-"type": 3,
-"trgs": [
-44
-]
-}
-],
-"dialog": "D_PAD",
-"sentence": "1"
-},
-{
-"type": 775,
-"id": 43,
-"x": 445,
-"y": 349,
-"plugs": [
-{
-"id": 44,
-"type": 2
-},
-{
-"id": 45,
-"type": 3
-}
-],
-"scene": "S_PAD"
+"label": "OUTSIDE"
 }
 ]
 }
@@ -524,40 +453,7 @@
 "uid": "L_CRIMESCENE",
 "graph": {
 "board": {
-"nextid": 3,
-"boxes": [
-{
-"type": 257,
-"id": 1,
-"plugs": [
-{
-"id": 2,
-"type": 3
-}
-]
-}
-]
-}
-}
-},
-{
-"sid": 14,
-"uid": "L_PAD",
-"graph": {
-"board": {
-"nextid": 3,
-"boxes": [
-{
-"type": 257,
-"id": 1,
-"plugs": [
-{
-"id": 2,
-"type": 3
-}
-]
-}
-]
+"nextid": 3
 }
 }
 }
@@ -569,10 +465,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"nextID": 10,
-"zoom": 69,
-"x": -198,
-"y": -52
+"nextID": 11,
+"zoom": 70,
+"x": -26,
+"y": 29
 },
 "layers": {
 "BACK": {
@@ -703,6 +599,22 @@
 {}
 ]
 }
+],
+"labels": [
+{
+"name": "LIVINGROOM",
+"id": 10,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 225,
+"y": 154,
+"width": 138,
+"height": 395
+}
 ]
 },
 {
@@ -711,8 +623,8 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 69,
-"nextID": 9,
+"zoom": 40,
+"nextID": 11,
 "x": 186,
 "y": 151
 },
@@ -720,7 +632,25 @@
 "BACK": {
 "opacity_min": 100,
 "opacity_max": 100,
-"opacity_speed": 100
+"opacity_speed": 100,
+"image": {
+"aid": "629e1079548b94df"
+},
+"texture": {
+"width": 1380,
+"height": 752,
+"rects": [
+{
+"w": 1380,
+"h": 752
+}
+],
+"textures": [
+{
+"aid": "63ad9f21861b7760"
+}
+]
+}
 },
 "MA": {
 "speed_x": 100,
@@ -827,6 +757,36 @@
 {}
 ]
 }
+],
+"labels": [
+{
+"name": "OUTSIDE",
+"id": 9,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 123,
+"y": 193,
+"width": 190,
+"height": 400
+},
+{
+"name": "BEDROOM",
+"id": 10,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1038,
+"y": 131,
+"width": 165,
+"height": 440
+}
 ]
 },
 {
@@ -835,14 +795,34 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 49,
-"nextID": 1
+"zoom": 40,
+"nextID": 1,
+"x": 381,
+"y": 155
 },
 "layers": {
 "BACK": {
 "opacity_min": 100,
 "opacity_max": 100,
-"opacity_speed": 100
+"opacity_speed": 100,
+"image": {
+"aid": "27f4fcbffaa9bcb7"
+},
+"texture": {
+"width": 1380,
+"height": 752,
+"rects": [
+{
+"w": 1380,
+"h": 752
+}
+],
+"textures": [
+{
+"aid": "402efc27a8bd264c"
+}
+]
+}
 },
 "MA": {
 "speed_x": 100,
@@ -1306,7 +1286,8 @@
 "scroll_smooth": 50,
 "zoom_smooth": 50,
 "path_color": -1,
-"object": "O_HERO"
+"object": "O_HERO",
+"scene": "S_BEDROOM"
 },
 "icons": [
 {

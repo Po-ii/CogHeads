@@ -217,14 +217,14 @@
 }
 },
 "meta": {
-"nextAssetID": 100
+"nextAssetID": 101
 }
 },
 "puzzle": {
 "board": {
-"nextid": 82,
-"x": 1200,
-"y": 552,
+"nextid": 88,
+"x": 517,
+"y": 50,
 "boxes": [
 {
 "type": 257,
@@ -1105,7 +1105,7 @@
 "uid": "L_CRIMESCENE",
 "graph": {
 "board": {
-"nextid": 47,
+"nextid": 50,
 "x": 103,
 "y": 257,
 "boxes": [
@@ -1119,145 +1119,13 @@
 "id": 4,
 "type": 3,
 "trgs": [
-20
+48
 ]
 }
 ],
 "var_cmp": "==",
 "scene": "S_CRIMESCENE",
 "label": "EXIT"
-},
-{
-"type": 1035,
-"id": 5,
-"x": 525,
-"y": 98,
-"plugs": [
-{
-"id": 6,
-"type": 2
-},
-{
-"id": 7,
-"type": 3,
-"trgs": [
-14
-]
-},
-{
-"id": 8,
-"type": 3
-}
-],
-"dialog": "D_EXIT",
-"choice": "2"
-},
-{
-"type": 1035,
-"id": 9,
-"x": 518,
-"y": 233,
-"plugs": [
-{
-"id": 10,
-"type": 2
-},
-{
-"id": 11,
-"type": 3,
-"trgs": [
-17
-]
-},
-{
-"id": 12,
-"type": 3
-}
-],
-"dialog": "D_EXIT",
-"choice": "3"
-},
-{
-"type": 775,
-"id": 13,
-"x": 677,
-"y": 92,
-"plugs": [
-{
-"id": 14,
-"type": 2
-},
-{
-"id": 15,
-"type": 3
-}
-],
-"scene": "S_SURROUNDINGS"
-},
-{
-"type": 775,
-"id": 16,
-"x": 708,
-"y": 237,
-"plugs": [
-{
-"id": 17,
-"type": 2
-},
-{
-"id": 18,
-"type": 3
-}
-],
-"scene": "S_LIVINGROOM"
-},
-{
-"type": 781,
-"id": 19,
-"x": 294,
-"y": 215,
-"plugs": [
-{
-"id": 20,
-"type": 2
-},
-{
-"id": 21,
-"type": 3,
-"trgs": [
-6,
-10,
-23
-]
-}
-],
-"dialog": "D_EXIT",
-"sentence": "1"
-},
-{
-"type": 1035,
-"id": 22,
-"x": 528,
-"y": 385,
-"plugs": [
-{
-"id": 23,
-"type": 2
-},
-{
-"id": 24,
-"type": 3,
-"trgs": [
-38
-]
-},
-{
-"id": 25,
-"type": 3
-}
-],
-"dialog": "D_EXIT",
-"choice": "4"
 },
 {
 "type": 1285,
@@ -1296,24 +1164,6 @@
 "sentence": "1"
 },
 {
-"type": 781,
-"id": 37,
-"x": 666,
-"y": 381,
-"plugs": [
-{
-"id": 38,
-"type": 2
-},
-{
-"id": 39,
-"type": 3
-}
-],
-"dialog": "D_EXIT",
-"sentence": "5"
-},
-{
 "type": 1285,
 "id": 42,
 "x": 155,
@@ -1349,6 +1199,23 @@
 "player": "P_HERO",
 "item": "I_TOPHAT",
 "silent": "False"
+},
+{
+"type": 775,
+"id": 47,
+"x": 363,
+"y": 214,
+"plugs": [
+{
+"id": 48,
+"type": 2
+},
+{
+"id": 49,
+"type": 3
+}
+],
+"scene": "S_SURROUNDINGS"
 }
 ]
 }
@@ -1359,15 +1226,15 @@
 "uid": "L_SURROUNDINGS",
 "graph": {
 "board": {
-"nextid": 8,
-"x": 337,
-"y": 284,
+"nextid": 94,
+"x": 62,
+"y": 326,
 "boxes": [
 {
 "type": 1285,
 "id": 3,
-"x": 215,
-"y": 316,
+"x": 180,
+"y": 229,
 "plugs": [
 {
 "id": 4,
@@ -1383,8 +1250,8 @@
 {
 "type": 775,
 "id": 5,
-"x": 449,
-"y": 318,
+"x": 414,
+"y": 231,
 "plugs": [
 {
 "id": 6,
@@ -1396,6 +1263,98 @@
 }
 ],
 "scene": "S_CRIMESCENE"
+},
+{
+"type": 1287,
+"id": 8,
+"x": 183,
+"y": 70,
+"plugs": [
+{
+"id": 9,
+"type": 3,
+"trgs": [
+11
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_SURROUNDINGS",
+"instance": "KIRA"
+},
+{
+"type": 781,
+"id": 10,
+"x": 398,
+"y": 73,
+"plugs": [
+{
+"id": 11,
+"type": 2
+},
+{
+"id": 12,
+"type": 3,
+"trgs": [
+62
+]
+}
+],
+"dialog": "D_KIRA",
+"sentence": "1"
+},
+{
+"type": 775,
+"id": 61,
+"x": 733,
+"y": 55,
+"plugs": [
+{
+"id": 62,
+"type": 2
+},
+{
+"id": 63,
+"type": 3
+}
+],
+"scene": "S_ENIGME_ENFANT"
+},
+{
+"type": 1287,
+"id": 89,
+"x": 199,
+"y": -97,
+"plugs": [
+{
+"id": 90,
+"type": 3,
+"trgs": [
+92
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_SURROUNDINGS",
+"instance": "ALEJANDRO"
+},
+{
+"type": 781,
+"id": 91,
+"x": 415,
+"y": -98,
+"plugs": [
+{
+"id": 92,
+"type": 2
+},
+{
+"id": 93,
+"type": 3
+}
+],
+"dialog": "D_ALEJANDRO",
+"sentence": "3"
 }
 ]
 }
@@ -1415,9 +1374,9 @@
 "uid": "L_ENIGME_ENFANT",
 "graph": {
 "board": {
-"nextid": 404,
-"x": 741,
-"y": -174,
+"nextid": 440,
+"x": 536,
+"y": -725,
 "boxes": [
 {
 "type": 776,
@@ -6243,7 +6202,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 72,
+"zoom": 69,
 "nextID": 10,
 "x": -108,
 "y": 45
@@ -8080,10 +8039,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 72,
-"nextID": 7,
-"x": -61,
-"y": 90
+"zoom": 54,
+"nextID": 9,
+"x": -43,
+"y": 139
 },
 "layers": {
 "BACK": {
@@ -9472,28 +9431,12 @@
 "row": 43
 },
 {
-"col": 63,
-"row": 44
-},
-{
-"col": 63,
-"row": 45
-},
-{
 "col": 64,
 "row": 42
 },
 {
 "col": 64,
 "row": 43
-},
-{
-"col": 64,
-"row": 44
-},
-{
-"col": 64,
-"row": 45
 },
 {
 "col": 64,
@@ -9512,10 +9455,6 @@
 "row": 43
 },
 {
-"col": 65,
-"row": 44
-},
-{
 "col": 66,
 "row": 41
 },
@@ -9528,10 +9467,6 @@
 "row": 43
 },
 {
-"col": 66,
-"row": 44
-},
-{
 "col": 67,
 "row": 41
 },
@@ -9541,11 +9476,10 @@
 },
 {
 "col": 67,
-"row": 43
-},
-{
-"col": 67,
-"row": 44
+"row": 43,
+"link_sel_instance": {
+"instance": "KIRA"
+}
 },
 {
 "col": 65,
@@ -9561,54 +9495,6 @@
 },
 {
 "col": 68,
-"row": 40
-},
-{
-"col": 68,
-"row": 41
-},
-{
-"col": 68,
-"row": 42
-},
-{
-"col": 68,
-"row": 43
-},
-{
-"col": 69,
-"row": 40
-},
-{
-"col": 69,
-"row": 41
-},
-{
-"col": 69,
-"row": 42
-},
-{
-"col": 69,
-"row": 43
-},
-{
-"col": 70,
-"row": 40
-},
-{
-"col": 70,
-"row": 41
-},
-{
-"col": 70,
-"row": 42
-},
-{
-"col": 70,
-"row": 43
-},
-{
-"col": 68,
 "row": 39
 },
 {
@@ -9618,82 +9504,6 @@
 {
 "col": 70,
 "row": 39
-},
-{
-"col": 71,
-"row": 39
-},
-{
-"col": 71,
-"row": 40
-},
-{
-"col": 71,
-"row": 41
-},
-{
-"col": 71,
-"row": 42
-},
-{
-"col": 72,
-"row": 39
-},
-{
-"col": 72,
-"row": 40
-},
-{
-"col": 72,
-"row": 41
-},
-{
-"col": 72,
-"row": 42
-},
-{
-"col": 73,
-"row": 39
-},
-{
-"col": 73,
-"row": 40
-},
-{
-"col": 73,
-"row": 41
-},
-{
-"col": 73,
-"row": 42
-},
-{
-"col": 71,
-"row": 38
-},
-{
-"col": 72,
-"row": 38
-},
-{
-"col": 73,
-"row": 38
-},
-{
-"col": 74,
-"row": 38
-},
-{
-"col": 74,
-"row": 39
-},
-{
-"col": 74,
-"row": 40
-},
-{
-"col": 74,
-"row": 41
 },
 {
 "col": 70,
@@ -9983,16 +9793,8 @@
 "row": 37
 },
 {
-"col": 72,
-"row": 37
-},
-{
 "col": 73,
 "row": 36
-},
-{
-"col": 73,
-"row": 37
 },
 {
 "col": 73,
@@ -10011,28 +9813,8 @@
 "row": 35
 },
 {
-"col": 74,
-"row": 36
-},
-{
-"col": 74,
-"row": 37
-},
-{
 "col": 75,
 "row": 34
-},
-{
-"col": 75,
-"row": 35
-},
-{
-"col": 75,
-"row": 36
-},
-{
-"col": 75,
-"row": 37
 },
 {
 "col": 73,
@@ -10049,18 +9831,6 @@
 {
 "col": 76,
 "row": 33
-},
-{
-"col": 76,
-"row": 34
-},
-{
-"col": 76,
-"row": 35
-},
-{
-"col": 76,
-"row": 36
 },
 {
 "col": 73,
@@ -10239,68 +10009,8 @@
 "row": 29
 },
 {
-"col": 80,
-"row": 30
-},
-{
-"col": 80,
-"row": 31
-},
-{
-"col": 81,
-"row": 29
-},
-{
-"col": 81,
-"row": 30
-},
-{
-"col": 79,
-"row": 32
-},
-{
-"col": 80,
-"row": 32
-},
-{
 "col": 77,
 "row": 33
-},
-{
-"col": 78,
-"row": 33
-},
-{
-"col": 79,
-"row": 33
-},
-{
-"col": 77,
-"row": 34
-},
-{
-"col": 78,
-"row": 34
-},
-{
-"col": 77,
-"row": 35
-},
-{
-"col": 77,
-"row": 36
-},
-{
-"col": 76,
-"row": 37
-},
-{
-"col": 75,
-"row": 38
-},
-{
-"col": 75,
-"row": 39
 },
 {
 "col": 50,
@@ -10646,26 +10356,6 @@
 "row": 38
 },
 {
-"col": 65,
-"row": 45
-},
-{
-"col": 66,
-"row": 45
-},
-{
-"col": 67,
-"row": 45
-},
-{
-"col": 68,
-"row": 44
-},
-{
-"col": 81,
-"row": 31
-},
-{
 "col": 60,
 "row": 46
 },
@@ -10810,14 +10500,6 @@
 "row": 46
 },
 {
-"col": 63,
-"row": 46
-},
-{
-"col": 64,
-"row": 46
-},
-{
 "col": 27,
 "row": 40
 }
@@ -10899,25 +10581,25 @@
 "name": "KIRA",
 "depths": [
 {
-"a": 12,
+"a": 13,
 "b": 100
 },
 {
 "y": 752,
-"a": 12,
+"a": 13,
 "b": 100
 }
 ],
 "uid": "O_KIRA",
-"id": 6,
+"id": 8,
 "tags": [
 "",
 "",
 "",
 ""
 ],
-"x": 1094,
-"y": 310,
+"x": 1300,
+"y": 686,
 "parallax": 100,
 "opacity": 100,
 "light_ambient": 255,
@@ -11356,7 +11038,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 72,
+"zoom": 64,
 "nextID": 64,
 "x": -199,
 "y": -195
@@ -16903,8 +16585,8 @@
 "uid": "O_KIRA",
 "content": {
 "bbox": true,
-"width": 2816,
-"height": 1536,
+"width": 1013,
+"height": 1534,
 "x": 1399,
 "y": 1380
 },
@@ -16930,16 +16612,16 @@
 {
 "image": {
 "hi": {
-"aid": "d891a66b059e3a7c"
+"aid": "cdb30fba9c82fcce"
 },
 "lo": {
-"aid": "323d39e3cc7f268a"
+"aid": "581fc1e38afa8bd7"
 }
 },
-"x": 1084,
+"x": 169,
 "y": 146,
-"w": 1732,
-"h": 1390
+"w": 674,
+"h": 1388
 }
 ]
 },
@@ -17035,18 +16717,18 @@
 "frames": [
 {
 "index2": -1,
-"w": 1732,
-"h": 1390
+"w": 674,
+"h": 1388
 }
 ],
 "packs": [
 {
 "count": 1,
 "collider": {
-"aid": "c1875a530e0c6050"
+"aid": "1b0b5b9c11e238b7"
 },
 "texture": {
-"aid": "2dcccd1251163699"
+"aid": "9e7c0a4b94bed3d2"
 }
 }
 ]
@@ -20191,7 +19873,7 @@
 "zoom_smooth": 50,
 "path_color": -1,
 "object": "O_HERO",
-"scene": "S_ENIGME_ENFANT"
+"scene": "S_SURROUNDINGS"
 },
 "icons": [
 {
@@ -21453,7 +21135,31 @@
 {},
 {}
 ]
+},
+"sentences": [
+{
+"id": 11,
+"text": {
+"en": "Absolument ! \r\nOn voit tout de suite que le gars sait s’en servir. Pas un amateur du tout !"
+},
+"sentences": [
+{
+"id": 12,
+"text": {
+"en": " Parfait. Merci, Alejandro. \r\nÇa va nous aider à comprendre le tueur."
+},
+"sentences": [
+{
+"id": 13,
+"text": {
+"en": "Ha ! Avec plaisir ! Et souvenez-vous, \"le Z\" voit tout ! \r\nMais allez, maintenant, je retourne à mes occupations palpitantes !"
 }
+}
+]
+}
+]
+}
+]
 }
 ],
 "speaker": "O_ALEJANDRO",
@@ -21523,7 +21229,7 @@
 }
 ]
 },
-"nextID": 11
+"nextID": 14
 }
 },
 {
@@ -21541,6 +21247,193 @@
 ]
 }
 }
+}
+},
+{
+"sid": 100,
+"uid": "D_KIRA",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "Bonsoir… vous avez vu quelque chose d’inhabituel ce soir ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 2,
+"text": {
+"en": "E-euh… je… je… j’ai vu quelqu’un… enfin… je… c-c’est pas possible…"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 3,
+"text": {
+"en": "Calmez-vous. Qui avez-vous vu, exactement ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 4,
+"text": {
+"en": "J'étais sur les toits… j'ai aperçu une silhouette. \r\nJe n'ai pas tout vu, juste un bout de visage… mais cette voix… je l'ai déjà entendue. \r\nJe… je ne pourrai pas vous le dire."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 5,
+"text": {
+"en": "Vous avez une preuve ? Un détail concret qui pourrait m'aider ?\r\n"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 6,
+"text": {
+"en": "(Tremblante) J'ai essayé… j'ai pris ça. \r\nMais j'ai eu tellement peur que je l'ai déchirée. \r\nTenez… prenez-les. Je ne veux plus avoir ça sur moi."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 7,
+"text": {
+"en": "Elle tend à Sam une poignée de lambeaux de papier froissés."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 8,
+"text": {
+"en": "Une photo ? Vous l'avez prise depuis là-haut ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 9,
+"text": {
+"en": "Ne me demandez plus rien… s'il vous plaît. \r\nRegardez par vous-même."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 10,
+"text": {
+"en": "(Examinant les fragments) C'est illisible dans cet état. \r\nJe vais devoir remettre les morceaux en ordre pour y voir plus clair."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_NARRATOR"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_NARRATOR"
+}
+],
+"speaker": "O_KIRA"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_KIRA"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_KIRA"
+}
+],
+"speaker": "O_HERO"
+}
+]
+},
+"nextID": 11
 }
 }
 ],

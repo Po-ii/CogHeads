@@ -24,13 +24,13 @@
 "light_ambient": "255",
 "merge_audio_text": "1",
 "font": {
-"name": "Cartoon",
+"name": "Roman",
 "meta": {
-"aid": "6d6bddb7520a0dc2"
+"aid": "629ff9ede01be39f"
 },
 "textures": [
 {
-"aid": "b6a2d211774ba316"
+"aid": "c2623aba3862f8ee"
 }
 ]
 },
@@ -53,7 +53,8 @@
 {},
 {}
 ]
-}
+},
+"no_font_size_option": "0"
 },
 "dialog": {
 "speed": "Fast",
@@ -105,7 +106,10 @@
 "width": 250,
 "height": 165
 }
-}
+},
+"choice": "Default",
+"talk": "Default",
+"random": "0"
 },
 "configs": [
 {
@@ -213,7 +217,7 @@
 }
 },
 "meta": {
-"nextAssetID": 44
+"nextAssetID": 54
 }
 },
 "puzzle": {
@@ -276,9 +280,9 @@
 "uid": "L_BEDROOM",
 "graph": {
 "board": {
-"nextid": 83,
-"x": -148,
-"y": 96,
+"nextid": 92,
+"x": -274,
+"y": 23,
 "boxes": [
 {
 "type": 775,
@@ -336,12 +340,15 @@
 {
 "type": 1285,
 "id": 63,
-"x": 615,
-"y": 534,
+"x": 614,
+"y": 533,
 "plugs": [
 {
 "id": 64,
-"type": 3
+"type": 3,
+"trgs": [
+87
+]
 }
 ],
 "var_cmp": "==",
@@ -356,7 +363,10 @@
 "plugs": [
 {
 "id": 66,
-"type": 3
+"type": 3,
+"trgs": [
+84
+]
 }
 ],
 "var_cmp": "==",
@@ -371,7 +381,10 @@
 "plugs": [
 {
 "id": 68,
-"type": 3
+"type": 3,
+"trgs": [
+90
+]
 }
 ],
 "var_cmp": "==",
@@ -400,7 +413,7 @@
 "type": 781,
 "id": 77,
 "x": 815,
-"y": 639,
+"y": 638,
 "plugs": [
 {
 "id": 78,
@@ -417,8 +430,8 @@
 {
 "type": 781,
 "id": 80,
-"x": 807,
-"y": 409,
+"x": 808,
+"y": 408,
 "plugs": [
 {
 "id": 81,
@@ -430,6 +443,60 @@
 }
 ],
 "dialog": "D_JOURNAL",
+"sentence": "1"
+},
+{
+"type": 781,
+"id": 83,
+"x": 810,
+"y": 313,
+"plugs": [
+{
+"id": 84,
+"type": 2
+},
+{
+"id": 85,
+"type": 3
+}
+],
+"dialog": "D_PROOF",
+"sentence": "1"
+},
+{
+"type": 781,
+"id": 86,
+"x": 816,
+"y": 533,
+"plugs": [
+{
+"id": 87,
+"type": 2
+},
+{
+"id": 88,
+"type": 3
+}
+],
+"dialog": "D_BED",
+"sentence": "1"
+},
+{
+"type": 781,
+"id": 89,
+"x": 836,
+"y": 224,
+"plugs": [
+{
+"id": 90,
+"type": 2
+},
+{
+"id": 91,
+"type": 3
+}
+],
+"dialog": "D_WINDOW",
 "sentence": "1"
 }
 ]
@@ -491,8 +558,8 @@
 "graph": {
 "board": {
 "nextid": 84,
-"x": -130,
-"y": 68,
+"x": -40,
+"y": 121,
 "boxes": [
 {
 "type": 775,
@@ -659,7 +726,213 @@
 "uid": "L_CRIMESCENE",
 "graph": {
 "board": {
-"nextid": 3
+"nextid": 42,
+"boxes": [
+{
+"type": 1285,
+"id": 3,
+"x": 150,
+"y": 211,
+"plugs": [
+{
+"id": 4,
+"type": 3,
+"trgs": [
+20
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CRIMESCENE",
+"label": "EXIT"
+},
+{
+"type": 1035,
+"id": 5,
+"x": 525,
+"y": 98,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3,
+"trgs": [
+14
+]
+},
+{
+"id": 8,
+"type": 3
+}
+],
+"dialog": "D_EXIT",
+"choice": "2"
+},
+{
+"type": 1035,
+"id": 9,
+"x": 518,
+"y": 233,
+"plugs": [
+{
+"id": 10,
+"type": 2
+},
+{
+"id": 11,
+"type": 3,
+"trgs": [
+17
+]
+},
+{
+"id": 12,
+"type": 3
+}
+],
+"dialog": "D_EXIT",
+"choice": "3"
+},
+{
+"type": 775,
+"id": 13,
+"x": 677,
+"y": 92,
+"plugs": [
+{
+"id": 14,
+"type": 2
+},
+{
+"id": 15,
+"type": 3
+}
+],
+"scene": "S_SURROUNDINGS"
+},
+{
+"type": 775,
+"id": 16,
+"x": 708,
+"y": 237,
+"plugs": [
+{
+"id": 17,
+"type": 2
+},
+{
+"id": 18,
+"type": 3
+}
+],
+"scene": "S_LIVINGROOM"
+},
+{
+"type": 781,
+"id": 19,
+"x": 294,
+"y": 215,
+"plugs": [
+{
+"id": 20,
+"type": 2
+},
+{
+"id": 21,
+"type": 3,
+"trgs": [
+6,
+10,
+23
+]
+}
+],
+"dialog": "D_EXIT",
+"sentence": "1"
+},
+{
+"type": 1035,
+"id": 22,
+"x": 528,
+"y": 385,
+"plugs": [
+{
+"id": 23,
+"type": 2
+},
+{
+"id": 24,
+"type": 3,
+"trgs": [
+38
+]
+},
+{
+"id": 25,
+"type": 3
+}
+],
+"dialog": "D_EXIT",
+"choice": "4"
+},
+{
+"type": 1285,
+"id": 32,
+"x": 163,
+"y": 571,
+"plugs": [
+{
+"id": 33,
+"type": 3,
+"trgs": [
+35
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CRIMESCENE",
+"label": "SCIENTIST"
+},
+{
+"type": 781,
+"id": 34,
+"x": 350,
+"y": 567,
+"plugs": [
+{
+"id": 35,
+"type": 2
+},
+{
+"id": 36,
+"type": 3
+}
+],
+"dialog": "D_SCIENTIST",
+"sentence": "1"
+},
+{
+"type": 781,
+"id": 37,
+"x": 666,
+"y": 381,
+"plugs": [
+{
+"id": 38,
+"type": 2
+},
+{
+"id": 39,
+"type": 3
+}
+],
+"dialog": "D_EXIT",
+"sentence": "5"
+}
+]
 }
 }
 },
@@ -686,7 +959,7 @@
 },
 {
 "sid": 32,
-"uid": "L_INTERROGATION_ROOM",
+"uid": "L_INTERROGATION_ROOM_J",
 "graph": {
 "board": {
 "nextid": 3
@@ -703,8 +976,8 @@
 "light_blur": -1,
 "nextID": 25,
 "zoom": 69,
-"x": -90,
-"y": 39
+"x": 5,
+"y": 20
 },
 "layers": {
 "BACK": {
@@ -2469,212 +2742,6 @@
 ]
 },
 {
-"name": "FLASH",
-"uid": "O_FLASH",
-"id": 11,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 293,
-"y": 363,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH2",
-"uid": "O_FLASH",
-"id": 15,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 865,
-"y": 405,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH3",
-"depths": [
-{
-"a": 100,
-"b": 100
-},
-{
-"y": 752,
-"a": 100,
-"b": 100
-}
-],
-"uid": "O_FLASH",
-"id": 16,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 1155,
-"y": 655,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH4",
-"uid": "O_FLASH",
-"id": 19,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 1009,
-"y": 423,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH5",
-"uid": "O_FLASH",
-"id": 21,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 982,
-"y": 216,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
 "name": "NARRATOR",
 "uid": "O_NARRATOR",
 "id": 22,
@@ -2723,47 +2790,8 @@
 "",
 ""
 ],
-"x": 710,
-"y": 756,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH6",
-"uid": "O_FLASH",
-"id": 24,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 61,
-"y": 419,
+"x": 909,
+"y": 1064,
 "parallax": 100,
 "opacity": 100,
 "light_ambient": 255,
@@ -2859,7 +2887,7 @@
 "width": 134,
 "height": 186,
 "title": {
-"en": "Tableau à indices"
+"en": "Tableau des preuves"
 }
 },
 {
@@ -2906,8 +2934,8 @@
 "light_blur": -1,
 "zoom": 69,
 "nextID": 14,
-"x": -190,
-"y": -43
+"x": -80,
+"y": 19
 },
 "layers": {
 "BACK": {
@@ -3223,10 +3251,6 @@
 {
 "col": 47,
 "row": 44
-},
-{
-"col": 47,
-"row": 43
 },
 {
 "col": 48,
@@ -4233,6 +4257,38 @@
 {
 "col": 43,
 "row": 44
+},
+{
+"col": 62,
+"row": 34
+},
+{
+"col": 59,
+"row": 36
+},
+{
+"col": 57,
+"row": 37
+},
+{
+"col": 54,
+"row": 39
+},
+{
+"col": 55,
+"row": 38
+},
+{
+"col": 52,
+"row": 40
+},
+{
+"col": 50,
+"row": 41
+},
+{
+"col": 48,
+"row": 42
 }
 ]
 },
@@ -4264,84 +4320,6 @@
 "a": 90,
 "b": 100
 }
-]
-},
-{
-"name": "FLASH",
-"uid": "O_FLASH",
-"id": 11,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 219,
-"y": 395,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "FLASH2",
-"uid": "O_FLASH",
-"id": 12,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 1121,
-"y": 367,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
 ]
 },
 {
@@ -4397,7 +4375,10 @@
 "x": 123,
 "y": 193,
 "width": 190,
-"height": 400
+"height": 400,
+"title": {
+"en": "Scène du crime"
+}
 },
 {
 "name": "BEDROOM",
@@ -4411,7 +4392,10 @@
 "x": 1038,
 "y": 131,
 "width": 165,
-"height": 440
+"height": 440,
+"title": {
+"en": "Chambre"
+}
 }
 ]
 },
@@ -4421,10 +4405,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 69,
-"nextID": 5,
-"x": -141,
-"y": 153
+"zoom": 100,
+"nextID": 9,
+"x": -185,
+"y": -54
 },
 "layers": {
 "BACK": {
@@ -4517,45 +4501,6 @@
 },
 "instances": [
 {
-"name": "FLASH",
-"uid": "O_FLASH",
-"id": 2,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 785,
-"y": 386,
-"parallax": 100,
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
 "name": "HERO",
 "depths": [
 {
@@ -4576,7 +4521,7 @@
 "",
 ""
 ],
-"x": 1193,
+"x": 1232,
 "y": 517,
 "parallax": 100,
 "opacity": 100,
@@ -4624,14 +4569,6 @@
 },
 {
 "col": 57,
-"row": 32
-},
-{
-"col": 58,
-"row": 32
-},
-{
-"col": 57,
 "row": 34
 },
 {
@@ -4653,6 +4590,1765 @@
 {
 "col": 54,
 "row": 35
+},
+{
+"col": 58,
+"row": 34
+},
+{
+"col": 58,
+"row": 35
+},
+{
+"col": 59,
+"row": 34
+},
+{
+"col": 59,
+"row": 35
+},
+{
+"col": 60,
+"row": 34
+},
+{
+"col": 60,
+"row": 35
+},
+{
+"col": 61,
+"row": 34
+},
+{
+"col": 61,
+"row": 35
+},
+{
+"col": 62,
+"row": 34
+},
+{
+"col": 62,
+"row": 35
+},
+{
+"col": 61,
+"row": 33
+},
+{
+"col": 62,
+"row": 33
+},
+{
+"col": 63,
+"row": 33
+},
+{
+"col": 63,
+"row": 34
+},
+{
+"col": 64,
+"row": 33
+},
+{
+"col": 64,
+"row": 34
+},
+{
+"col": 65,
+"row": 33
+},
+{
+"col": 65,
+"row": 34
+},
+{
+"col": 64,
+"row": 35
+},
+{
+"col": 65,
+"row": 35
+},
+{
+"col": 66,
+"row": 34
+},
+{
+"col": 66,
+"row": 35
+},
+{
+"col": 65,
+"row": 36
+},
+{
+"col": 66,
+"row": 36
+},
+{
+"col": 63,
+"row": 35
+},
+{
+"col": 66,
+"row": 33
+},
+{
+"col": 67,
+"row": 33
+},
+{
+"col": 67,
+"row": 34
+},
+{
+"col": 67,
+"row": 35
+},
+{
+"col": 68,
+"row": 34
+},
+{
+"col": 68,
+"row": 35
+},
+{
+"col": 69,
+"row": 34
+},
+{
+"col": 69,
+"row": 35
+},
+{
+"col": 70,
+"row": 34
+},
+{
+"col": 70,
+"row": 35
+},
+{
+"col": 71,
+"row": 34
+},
+{
+"col": 71,
+"row": 35
+},
+{
+"col": 70,
+"row": 33
+},
+{
+"col": 71,
+"row": 33
+},
+{
+"col": 70,
+"row": 32
+},
+{
+"col": 71,
+"row": 32
+},
+{
+"col": 70,
+"row": 31
+},
+{
+"col": 71,
+"row": 31
+},
+{
+"col": 72,
+"row": 31
+},
+{
+"col": 72,
+"row": 32
+},
+{
+"col": 72,
+"row": 33
+},
+{
+"col": 69,
+"row": 33
+},
+{
+"col": 68,
+"row": 33
+},
+{
+"col": 64,
+"row": 32
+},
+{
+"col": 65,
+"row": 32
+},
+{
+"col": 66,
+"row": 32
+},
+{
+"col": 67,
+"row": 32
+},
+{
+"col": 68,
+"row": 32
+},
+{
+"col": 69,
+"row": 32
+},
+{
+"col": 63,
+"row": 32
+},
+{
+"col": 63,
+"row": 31
+},
+{
+"col": 64,
+"row": 31
+},
+{
+"col": 65,
+"row": 31
+},
+{
+"col": 66,
+"row": 31
+},
+{
+"col": 67,
+"row": 31
+},
+{
+"col": 66,
+"row": 30
+},
+{
+"col": 67,
+"row": 30
+},
+{
+"col": 68,
+"row": 30
+},
+{
+"col": 68,
+"row": 31
+},
+{
+"col": 69,
+"row": 30
+},
+{
+"col": 69,
+"row": 31
+},
+{
+"col": 70,
+"row": 30
+},
+{
+"col": 69,
+"row": 29
+},
+{
+"col": 70,
+"row": 29
+},
+{
+"col": 71,
+"row": 29
+},
+{
+"col": 71,
+"row": 30
+},
+{
+"col": 72,
+"row": 29
+},
+{
+"col": 72,
+"row": 30
+},
+{
+"col": 71,
+"row": 28
+},
+{
+"col": 72,
+"row": 28
+},
+{
+"col": 73,
+"row": 28
+},
+{
+"col": 73,
+"row": 29
+},
+{
+"col": 74,
+"row": 28
+},
+{
+"col": 74,
+"row": 29
+},
+{
+"col": 75,
+"row": 28
+},
+{
+"col": 75,
+"row": 29
+},
+{
+"col": 76,
+"row": 28
+},
+{
+"col": 76,
+"row": 29
+},
+{
+"col": 75,
+"row": 30
+},
+{
+"col": 76,
+"row": 30
+},
+{
+"col": 74,
+"row": 30
+},
+{
+"col": 74,
+"row": 31
+},
+{
+"col": 75,
+"row": 31
+},
+{
+"col": 73,
+"row": 30
+},
+{
+"col": 73,
+"row": 31
+},
+{
+"col": 73,
+"row": 32
+},
+{
+"col": 74,
+"row": 32
+},
+{
+"col": 72,
+"row": 34
+},
+{
+"col": 72,
+"row": 35
+},
+{
+"col": 73,
+"row": 33
+},
+{
+"col": 73,
+"row": 34
+},
+{
+"col": 74,
+"row": 33
+},
+{
+"col": 74,
+"row": 34
+},
+{
+"col": 75,
+"row": 32
+},
+{
+"col": 75,
+"row": 33
+},
+{
+"col": 76,
+"row": 31
+},
+{
+"col": 76,
+"row": 32
+},
+{
+"col": 77,
+"row": 31
+},
+{
+"col": 77,
+"row": 32
+},
+{
+"col": 77,
+"row": 30
+},
+{
+"col": 76,
+"row": 33
+},
+{
+"col": 75,
+"row": 34
+},
+{
+"col": 76,
+"row": 34
+},
+{
+"col": 77,
+"row": 33
+},
+{
+"col": 77,
+"row": 34
+},
+{
+"col": 78,
+"row": 32
+},
+{
+"col": 78,
+"row": 33
+},
+{
+"col": 79,
+"row": 32
+},
+{
+"col": 79,
+"row": 33
+},
+{
+"col": 80,
+"row": 32
+},
+{
+"col": 80,
+"row": 33
+},
+{
+"col": 79,
+"row": 31
+},
+{
+"col": 80,
+"row": 31
+},
+{
+"col": 78,
+"row": 34
+},
+{
+"col": 75,
+"row": 35
+},
+{
+"col": 76,
+"row": 35
+},
+{
+"col": 74,
+"row": 35
+},
+{
+"col": 74,
+"row": 36
+},
+{
+"col": 75,
+"row": 36
+},
+{
+"col": 76,
+"row": 36
+},
+{
+"col": 77,
+"row": 35
+},
+{
+"col": 77,
+"row": 36
+},
+{
+"col": 78,
+"row": 35
+},
+{
+"col": 79,
+"row": 34
+},
+{
+"col": 80,
+"row": 30
+},
+{
+"col": 80,
+"row": 28,
+"link_sel_label": {
+"label": "EXIT"
+}
+},
+{
+"col": 79,
+"row": 28
+},
+{
+"col": 79,
+"row": 29
+},
+{
+"col": 80,
+"row": 29
+},
+{
+"col": 78,
+"row": 28
+},
+{
+"col": 78,
+"row": 29
+},
+{
+"col": 77,
+"row": 28
+},
+{
+"col": 77,
+"row": 29
+},
+{
+"col": 78,
+"row": 30
+},
+{
+"col": 78,
+"row": 31
+},
+{
+"col": 79,
+"row": 30
+},
+{
+"col": 75,
+"row": 27
+},
+{
+"col": 73,
+"row": 35
+},
+{
+"col": 73,
+"row": 36
+},
+{
+"col": 73,
+"row": 37
+},
+{
+"col": 74,
+"row": 37
+},
+{
+"col": 73,
+"row": 38
+},
+{
+"col": 74,
+"row": 38
+},
+{
+"col": 72,
+"row": 37
+},
+{
+"col": 72,
+"row": 38
+},
+{
+"col": 71,
+"row": 37
+},
+{
+"col": 71,
+"row": 38
+},
+{
+"col": 70,
+"row": 37
+},
+{
+"col": 70,
+"row": 38
+},
+{
+"col": 69,
+"row": 37
+},
+{
+"col": 69,
+"row": 38
+},
+{
+"col": 68,
+"row": 37
+},
+{
+"col": 68,
+"row": 38
+},
+{
+"col": 68,
+"row": 36
+},
+{
+"col": 69,
+"row": 36
+},
+{
+"col": 70,
+"row": 36
+},
+{
+"col": 71,
+"row": 36
+},
+{
+"col": 72,
+"row": 36
+},
+{
+"col": 67,
+"row": 37
+},
+{
+"col": 67,
+"row": 38
+},
+{
+"col": 66,
+"row": 37
+},
+{
+"col": 66,
+"row": 38
+},
+{
+"col": 65,
+"row": 37
+},
+{
+"col": 65,
+"row": 38
+},
+{
+"col": 64,
+"row": 36
+},
+{
+"col": 63,
+"row": 36
+},
+{
+"col": 62,
+"row": 36
+},
+{
+"col": 67,
+"row": 36
+},
+{
+"col": 60,
+"row": 33
+},
+{
+"col": 56,
+"row": 35
+},
+{
+"col": 57,
+"row": 35
+},
+{
+"col": 55,
+"row": 35
+},
+{
+"col": 55,
+"row": 36
+},
+{
+"col": 56,
+"row": 36
+},
+{
+"col": 54,
+"row": 36
+},
+{
+"col": 53,
+"row": 36
+},
+{
+"col": 53,
+"row": 37
+},
+{
+"col": 54,
+"row": 37
+},
+{
+"col": 52,
+"row": 36
+},
+{
+"col": 52,
+"row": 37
+},
+{
+"col": 52,
+"row": 38
+},
+{
+"col": 53,
+"row": 38
+},
+{
+"col": 51,
+"row": 37
+},
+{
+"col": 51,
+"row": 38
+},
+{
+"col": 50,
+"row": 37
+},
+{
+"col": 50,
+"row": 38
+},
+{
+"col": 50,
+"row": 39
+},
+{
+"col": 51,
+"row": 39
+},
+{
+"col": 49,
+"row": 38
+},
+{
+"col": 49,
+"row": 39
+},
+{
+"col": 49,
+"row": 40
+},
+{
+"col": 50,
+"row": 40
+},
+{
+"col": 48,
+"row": 39
+},
+{
+"col": 48,
+"row": 40
+},
+{
+"col": 48,
+"row": 41
+},
+{
+"col": 49,
+"row": 41
+},
+{
+"col": 47,
+"row": 40
+},
+{
+"col": 47,
+"row": 41
+},
+{
+"col": 47,
+"row": 42
+},
+{
+"col": 48,
+"row": 42
+},
+{
+"col": 46,
+"row": 41
+},
+{
+"col": 46,
+"row": 42
+},
+{
+"col": 45,
+"row": 41
+},
+{
+"col": 45,
+"row": 42
+},
+{
+"col": 45,
+"row": 43
+},
+{
+"col": 46,
+"row": 43
+},
+{
+"col": 44,
+"row": 42
+},
+{
+"col": 44,
+"row": 43
+},
+{
+"col": 44,
+"row": 44
+},
+{
+"col": 45,
+"row": 44
+},
+{
+"col": 43,
+"row": 43
+},
+{
+"col": 43,
+"row": 44
+},
+{
+"col": 42,
+"row": 43
+},
+{
+"col": 42,
+"row": 44
+},
+{
+"col": 42,
+"row": 45
+},
+{
+"col": 43,
+"row": 45
+},
+{
+"col": 41,
+"row": 44
+},
+{
+"col": 41,
+"row": 45
+},
+{
+"col": 40,
+"row": 44
+},
+{
+"col": 40,
+"row": 45
+},
+{
+"col": 40,
+"row": 46
+},
+{
+"col": 41,
+"row": 46
+},
+{
+"col": 39,
+"row": 45
+},
+{
+"col": 39,
+"row": 46
+},
+{
+"col": 38,
+"row": 45
+},
+{
+"col": 38,
+"row": 46
+},
+{
+"col": 37,
+"row": 45
+},
+{
+"col": 37,
+"row": 46
+},
+{
+"col": 36,
+"row": 45
+},
+{
+"col": 36,
+"row": 46
+},
+{
+"col": 35,
+"row": 45
+},
+{
+"col": 35,
+"row": 46
+},
+{
+"col": 34,
+"row": 45
+},
+{
+"col": 34,
+"row": 46
+},
+{
+"col": 33,
+"row": 45
+},
+{
+"col": 33,
+"row": 46
+},
+{
+"col": 33,
+"row": 44
+},
+{
+"col": 34,
+"row": 44
+},
+{
+"col": 32,
+"row": 44
+},
+{
+"col": 32,
+"row": 45
+},
+{
+"col": 31,
+"row": 44
+},
+{
+"col": 31,
+"row": 45
+},
+{
+"col": 30,
+"row": 44
+},
+{
+"col": 30,
+"row": 45
+},
+{
+"col": 29,
+"row": 44
+},
+{
+"col": 29,
+"row": 45
+},
+{
+"col": 28,
+"row": 44
+},
+{
+"col": 28,
+"row": 45
+},
+{
+"col": 27,
+"row": 44
+},
+{
+"col": 27,
+"row": 45
+},
+{
+"col": 26,
+"row": 44
+},
+{
+"col": 26,
+"row": 45
+},
+{
+"col": 25,
+"row": 44
+},
+{
+"col": 25,
+"row": 45
+},
+{
+"col": 26,
+"row": 46
+},
+{
+"col": 27,
+"row": 46
+},
+{
+"col": 28,
+"row": 46
+},
+{
+"col": 29,
+"row": 46
+},
+{
+"col": 30,
+"row": 46
+},
+{
+"col": 31,
+"row": 46
+},
+{
+"col": 32,
+"row": 46
+},
+{
+"col": 35,
+"row": 44
+},
+{
+"col": 36,
+"row": 44
+},
+{
+"col": 37,
+"row": 44
+},
+{
+"col": 38,
+"row": 44
+},
+{
+"col": 39,
+"row": 44
+},
+{
+"col": 38,
+"row": 43
+},
+{
+"col": 39,
+"row": 43
+},
+{
+"col": 40,
+"row": 43
+},
+{
+"col": 41,
+"row": 43
+},
+{
+"col": 41,
+"row": 42
+},
+{
+"col": 42,
+"row": 42
+},
+{
+"col": 43,
+"row": 42
+},
+{
+"col": 42,
+"row": 41
+},
+{
+"col": 43,
+"row": 41
+},
+{
+"col": 44,
+"row": 41
+},
+{
+"col": 44,
+"row": 40
+},
+{
+"col": 45,
+"row": 40
+},
+{
+"col": 46,
+"row": 40
+},
+{
+"col": 46,
+"row": 39
+},
+{
+"col": 47,
+"row": 39
+},
+{
+"col": 47,
+"row": 38
+},
+{
+"col": 48,
+"row": 38
+},
+{
+"col": 49,
+"row": 37
+},
+{
+"col": 50,
+"row": 36
+},
+{
+"col": 51,
+"row": 36
+},
+{
+"col": 52,
+"row": 34
+},
+{
+"col": 51,
+"row": 35
+},
+{
+"col": 50,
+"row": 35
+},
+{
+"col": 49,
+"row": 36
+},
+{
+"col": 48,
+"row": 37
+},
+{
+"col": 47,
+"row": 37
+},
+{
+"col": 46,
+"row": 38
+},
+{
+"col": 45,
+"row": 38
+},
+{
+"col": 45,
+"row": 39
+},
+{
+"col": 44,
+"row": 39
+},
+{
+"col": 43,
+"row": 40
+},
+{
+"col": 40,
+"row": 42
+},
+{
+"col": 24,
+"row": 44
+},
+{
+"col": 24,
+"row": 45
+},
+{
+"col": 23,
+"row": 44
+},
+{
+"col": 23,
+"row": 45
+},
+{
+"col": 23,
+"row": 46
+},
+{
+"col": 24,
+"row": 46
+},
+{
+"col": 22,
+"row": 45
+},
+{
+"col": 22,
+"row": 46
+},
+{
+"col": 21,
+"row": 45
+},
+{
+"col": 21,
+"row": 46
+},
+{
+"col": 20,
+"row": 45
+},
+{
+"col": 20,
+"row": 46
+},
+{
+"col": 19,
+"row": 45
+},
+{
+"col": 19,
+"row": 46
+},
+{
+"col": 18,
+"row": 45
+},
+{
+"col": 18,
+"row": 46
+},
+{
+"col": 17,
+"row": 45
+},
+{
+"col": 17,
+"row": 46
+},
+{
+"col": 17,
+"row": 44
+},
+{
+"col": 18,
+"row": 44
+},
+{
+"col": 16,
+"row": 44
+},
+{
+"col": 16,
+"row": 45
+},
+{
+"col": 15,
+"row": 44
+},
+{
+"col": 15,
+"row": 45
+},
+{
+"col": 14,
+"row": 44
+},
+{
+"col": 14,
+"row": 45
+},
+{
+"col": 13,
+"row": 44
+},
+{
+"col": 13,
+"row": 45
+},
+{
+"col": 13,
+"row": 43
+},
+{
+"col": 14,
+"row": 43
+},
+{
+"col": 12,
+"row": 43
+},
+{
+"col": 12,
+"row": 44
+},
+{
+"col": 12,
+"row": 42
+},
+{
+"col": 13,
+"row": 42
+},
+{
+"col": 11,
+"row": 42
+},
+{
+"col": 11,
+"row": 43
+},
+{
+"col": 11,
+"row": 41
+},
+{
+"col": 12,
+"row": 41
+},
+{
+"col": 10,
+"row": 41
+},
+{
+"col": 10,
+"row": 42
+},
+{
+"col": 10,
+"row": 40
+},
+{
+"col": 11,
+"row": 40
+},
+{
+"col": 10,
+"row": 39
+},
+{
+"col": 11,
+"row": 39
+},
+{
+"col": 9,
+"row": 39
+},
+{
+"col": 9,
+"row": 40
+},
+{
+"col": 12,
+"row": 40
+},
+{
+"col": 13,
+"row": 40
+},
+{
+"col": 13,
+"row": 41
+},
+{
+"col": 14,
+"row": 41
+},
+{
+"col": 14,
+"row": 42
+},
+{
+"col": 15,
+"row": 42
+},
+{
+"col": 15,
+"row": 43
+},
+{
+"col": 16,
+"row": 42
+},
+{
+"col": 16,
+"row": 43
+},
+{
+"col": 17,
+"row": 43
+},
+{
+"col": 18,
+"row": 43
+},
+{
+"col": 19,
+"row": 43
+},
+{
+"col": 19,
+"row": 44
+},
+{
+"col": 20,
+"row": 43
+},
+{
+"col": 20,
+"row": 44
+},
+{
+"col": 21,
+"row": 44
+},
+{
+"col": 22,
+"row": 44
+},
+{
+"col": 25,
+"row": 46
+},
+{
+"col": 21,
+"row": 43
+},
+{
+"col": 22,
+"row": 43
+},
+{
+"col": 20,
+"row": 42
+},
+{
+"col": 21,
+"row": 42
+},
+{
+"col": 19,
+"row": 42
+},
+{
+"col": 19,
+"row": 41
+},
+{
+"col": 20,
+"row": 41
+},
+{
+"col": 18,
+"row": 41
+},
+{
+"col": 18,
+"row": 42
+},
+{
+"col": 18,
+"row": 40
+},
+{
+"col": 19,
+"row": 40
+},
+{
+"col": 17,
+"row": 40
+},
+{
+"col": 17,
+"row": 41
+},
+{
+"col": 16,
+"row": 40
+},
+{
+"col": 16,
+"row": 41
+},
+{
+"col": 16,
+"row": 39
+},
+{
+"col": 17,
+"row": 39
+},
+{
+"col": 15,
+"row": 39
+},
+{
+"col": 15,
+"row": 40
+},
+{
+"col": 14,
+"row": 39
+},
+{
+"col": 14,
+"row": 40
+},
+{
+"col": 14,
+"row": 38
+},
+{
+"col": 15,
+"row": 38
+},
+{
+"col": 13,
+"row": 38
+},
+{
+"col": 13,
+"row": 39
+},
+{
+"col": 12,
+"row": 39
+},
+{
+"col": 15,
+"row": 41
+},
+{
+"col": 17,
+"row": 42
+},
+{
+"col": 21,
+"row": 41
+},
+{
+"col": 22,
+"row": 41
+},
+{
+"col": 22,
+"row": 42
+},
+{
+"col": 23,
+"row": 42
+},
+{
+"col": 23,
+"row": 43
+},
+{
+"col": 24,
+"row": 42
+},
+{
+"col": 24,
+"row": 43
+},
+{
+"col": 25,
+"row": 42
+},
+{
+"col": 25,
+"row": 43
+},
+{
+"col": 23,
+"row": 41
+},
+{
+"col": 24,
+"row": 41
+},
+{
+"col": 22,
+"row": 40
+},
+{
+"col": 23,
+"row": 40
+},
+{
+"col": 21,
+"row": 40
+},
+{
+"col": 20,
+"row": 40
+},
+{
+"col": 20,
+"row": 39
+},
+{
+"col": 21,
+"row": 39
+},
+{
+"col": 19,
+"row": 39
+},
+{
+"col": 18,
+"row": 39
+},
+{
+"col": 18,
+"row": 38
+},
+{
+"col": 19,
+"row": 38
+},
+{
+"col": 20,
+"row": 38
+},
+{
+"col": 19,
+"row": 37
+},
+{
+"col": 20,
+"row": 37
+},
+{
+"col": 21,
+"row": 37
+},
+{
+"col": 21,
+"row": 38
+},
+{
+"col": 22,
+"row": 37
+},
+{
+"col": 22,
+"row": 38
+},
+{
+"col": 23,
+"row": 37
+},
+{
+"col": 23,
+"row": 38
+},
+{
+"col": 22,
+"row": 39
+},
+{
+"col": 23,
+"row": 39
+},
+{
+"col": 24,
+"row": 39
+},
+{
+"col": 24,
+"row": 40
+},
+{
+"col": 25,
+"row": 41
+},
+{
+"col": 18,
+"row": 37
+},
+{
+"col": 17,
+"row": 37
+},
+{
+"col": 17,
+"row": 38
+},
+{
+"col": 16,
+"row": 37
+},
+{
+"col": 16,
+"row": 38
+},
+{
+"col": 14,
+"row": 46
+},
+{
+"col": 15,
+"row": 46
+},
+{
+"col": 13,
+"row": 46
+},
+{
+"col": 16,
+"row": 46
 }
 ]
 },
@@ -4713,6 +6409,95 @@
 {},
 {}
 ]
+},
+{
+"name": "SCIENTIST2",
+"uid": "O_SCIENTIST",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 648,
+"y": 294,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "MOE",
+"depths": [
+{
+"a": 15,
+"b": 100
+},
+{
+"y": 752,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_MOE",
+"id": 8,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 252,
+"y": 667,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
 }
 ],
 "labels": [
@@ -4730,7 +6515,24 @@
 "width": 125,
 "height": 137,
 "title": {
-"en": "Police Scientifiaue"
+"en": "Policier Scientifique"
+}
+},
+{
+"name": "EXIT",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1198,
+"y": 2,
+"width": 184,
+"height": 566,
+"title": {
+"en": "Sortie"
 }
 }
 ]
@@ -4824,12 +6626,14 @@
 },
 {
 "sid": 31,
-"uid": "S_INTERROGATION_ROOM",
+"uid": "S_INTERROGATION_ROOM_J",
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
 "zoom": 69,
-"nextID": 1
+"nextID": 3,
+"x": -173,
+"y": 5
 },
 "layers": {
 "BACK": {
@@ -4919,7 +6723,290 @@
 "opacity_max": 100,
 "opacity_speed": 100
 }
+},
+"instances": [
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 715,
+"y": 1126,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "JEAN_BUST",
+"depths": [
+{
+"a": 30,
+"b": 100
+},
+{
+"y": 752,
+"a": 30,
+"b": 100
 }
+],
+"uid": "O_JEAN_BUST",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 666,
+"y": 529,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+]
+},
+{
+"sid": 53,
+"uid": "S_INTERROGATION_ROOM_A",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 69,
+"nextID": 4,
+"x": 146,
+"y": 102
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "aa9b5a15806dab1e"
+},
+"texture": {
+"width": 1380,
+"height": 752,
+"rects": [
+{
+"w": 1380,
+"h": 752
+}
+],
+"textures": [
+{
+"aid": "0de3ad4f702ebb86"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 685,
+"y": 1116,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ALEJANDRO_BUST",
+"depths": [
+{
+"a": 60,
+"b": 100
+},
+{
+"y": 752,
+"a": 60,
+"b": 100
+}
+],
+"uid": "O_ALEJANDRO_BUST",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 671,
+"y": 514,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+]
 }
 ],
 "objects": [
@@ -5764,6 +7851,163 @@
 "sid": 34,
 "uid": "O_MOE",
 "content": {
+"bbox": true,
+"title": {
+"en": "Moe Ronn"
+},
+"width": 375,
+"height": 375,
+"x": 199,
+"y": 308
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "02e065edf656d0dd"
+},
+"lo": {
+"aid": "5e167b51ca9f26bc"
+}
+},
+"x": 139,
+"y": 54,
+"w": 111,
+"h": 277
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 111,
+"h": 277
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "e118a16401daa2c6"
+},
+"texture": {
+"aid": "8fcc2b283d1abe10"
+}
+}
+]
+}
+},
+{
+"sid": 47,
+"uid": "O_SCIENTIST",
+"content": {
 "bbox": true
 },
 "icons": [
@@ -5873,6 +8117,622 @@
 "loop_count": -1
 }
 ]
+},
+{
+"sid": 49,
+"uid": "O_JEAN_BUST",
+"content": {
+"bbox": true,
+"width": 1191,
+"height": 1529,
+"x": 581,
+"y": 1317
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "efc33f32fad1bc7f"
+},
+"lo": {
+"aid": "bdc9c1f3da622c83"
+}
+},
+"x": 153,
+"y": 158,
+"w": 901,
+"h": 1225
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 901,
+"h": 1225
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "d8ef17e67e120483"
+},
+"texture": {
+"aid": "9063e2ea009f1b82"
+}
+}
+]
+}
+},
+{
+"sid": 50,
+"uid": "O_JEAN",
+"content": {
+"bbox": true,
+"width": 875,
+"height": 1527,
+"x": 431,
+"y": 1412
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "45397a04b7ee351e"
+},
+"lo": {
+"aid": "f0ed835f8fb969e9"
+}
+},
+"x": 213,
+"y": 105,
+"w": 445,
+"h": 1383
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 445,
+"h": 1383
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "1d1c323fdf2b2340"
+},
+"texture": {
+"aid": "31eccb811c0482c5"
+}
+}
+]
+}
+},
+{
+"sid": 51,
+"uid": "O_ALEJANDRO",
+"content": {
+"bbox": true,
+"width": 380,
+"height": 758,
+"x": 188,
+"y": 726
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "e39f3addab1eae4d"
+},
+"lo": {
+"aid": "496a90a7fdc69728"
+}
+},
+"x": 68,
+"y": 54,
+"w": 251,
+"h": 688
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 251,
+"h": 688
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "5e08e763d3d980af"
+},
+"texture": {
+"aid": "dd0aa651f54bc1c3"
+}
+}
+]
+}
+},
+{
+"sid": 52,
+"uid": "O_ALEJANDRO_BUST",
+"content": {
+"bbox": true,
+"width": 531,
+"height": 707,
+"x": 263,
+"y": 671
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "16b5255ddfc37bfa"
+},
+"lo": {
+"aid": "c82a5c0808d2147e"
+}
+},
+"x": 37,
+"y": 91,
+"w": 452,
+"h": 603
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 452,
+"h": 603
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "e75674bdec56ba73"
+},
+"texture": {
+"aid": "88b3addb60872c7d"
+}
+}
+]
+}
 }
 ],
 "players": [
@@ -5884,7 +8744,7 @@
 "zoom_smooth": 50,
 "path_color": -1,
 "object": "O_HERO",
-"scene": "S_LIVINGROOM"
+"scene": "S_INTERROGATION_ROOM_J"
 },
 "icons": [
 {
@@ -6049,7 +8909,7 @@
 {
 "id": 1,
 "text": {
-"en": "Sam : Encore une nuit blanche. Les rêves reviennent… toujours les mêmes images. La pluie. Le verre brisé. Cette route."
+"en": "Encore une nuit blanche. \r\nLes rêves reviennent… toujours les mêmes images. \r\nLa pluie. Le verre brisé. Cette route."
 },
 "voice": {
 "en": [
@@ -6063,7 +8923,7 @@
 {
 "id": 2,
 "text": {
-"en": "Sam : Moe dit que je devrais consulter un médecin."
+"en": "Moe dit que je devrais consulter un médecin."
 },
 "voice": {
 "en": [
@@ -6077,7 +8937,7 @@
 {
 "id": 3,
 "text": {
-"en": "Sam : Moe s'inquiète trop."
+"en": "Il s'inquiète trop."
 },
 "voice": {
 "en": [
@@ -6098,119 +8958,6 @@
 ]
 },
 "nextID": 4
-}
-},
-{
-"sid": 25,
-"uid": "D_LIVRE",
-"content": {
-"sentence": {
-"voice": {
-"en": [
-{},
-{},
-{},
-{}
-]
-},
-"sentences": [
-{
-"id": 1,
-"text": {
-"en": "[Sam tire le livre, lit quelques lignes]\r\nSam : « \"La schizophrénie dissociative : le sujet développe une identité parallèle, souvent ignorante de l'autre. Les épisodes peuvent durer des heures sans laisser de trace mémorielle…\" »\r\n[Il referme le livre rapidement]\r\nSam : « De la littérature de pacotille. »\r\n[Il repose le livre à l'envers]"
-},
-"voice": {
-"en": [
-{},
-{},
-{},
-{}
-]
-}
-}
-]
-},
-"nextID": 2
-}
-},
-{
-"sid": 26,
-"uid": "D_MEDOC",
-"content": {
-"sentence": {
-"voice": {
-"en": [
-{},
-{},
-{},
-{}
-]
-},
-"sentences": [
-{
-"id": 1,
-"text": {
-"en": "[Sam regarde le flacon, hésite]\r\nSam : « Rispéridone. Deux comprimés par jour. Je les prends. Enfin… la plupart du temps. »\r\n[Il repose le flacon sans l'ouvrir]\r\nSam : « Ils brouillent les idées. Et j'ai besoin d'avoir les idées claires pour cette affaire. »"
-},
-"voice": {
-"en": [
-{},
-{},
-{},
-{}
-]
-}
-}
-]
-},
-"nextID": 2
-}
-},
-{
-"sid": 28,
-"uid": "D_PORTE_SECRETE",
-"content": {
-"sentence": {
-"voice": {
-"en": [
-{},
-{},
-{},
-{}
-]
-},
-"sentences": [
-{
-"id": 1,
-"text": {
-"en": "[Sam pousse l'armoire, découvre la porte]\r\nSam : « Cette porte… Je sais qu'elle existe, mais je n'ai aucun souvenir de l'avoir installée. »\r\n[Il tente la poignée]\r\nSam : « Verrouillée. Depuis l'intérieur ou l'extérieur ? »\r\n[Il repose la main]\r\nSam : « Je trouverai la clé plus tard. »"
-},
-"voice": {
-"en": [
-{},
-{},
-{},
-{}
-]
-}
-},
-{
-"id": 2,
-"text": {
-"en": "Sam : « Il y a quelque chose derrière. Je l'entends parfois. Des bruits. Peut-être juste la tuyauterie de cet immeuble délabré. »\r\n[pause, voix plus basse]\r\nSam : « Peut-être. »"
-},
-"voice": {
-"en": [
-{},
-{},
-{},
-{}
-]
-}
-}
-]
-},
-"nextID": 3
 }
 },
 {
@@ -6380,7 +9127,7 @@
 {
 "id": 2,
 "text": {
-"en": "Trois victimes. Toutes retrouvées avec la même pièce mécanique manquante dans le crâne. Une petite bobine de cuivre, encastrée dans le cortex."
+"en": "Trois victimes.\r\nToutes retrouvées avec la même pièce mécanique manquante dans le crâne. \r\nUne petite bobine de cuivre, encastrée dans le cortex."
 },
 "voice": {
 "en": [
@@ -6408,7 +9155,7 @@
 {
 "id": 4,
 "text": {
-"en": "« Comme si le tueur… cherchait quelque chose qu'il a perdu."
+"en": "Comme si le tueur… cherchait quelque chose qu'il a perdu."
 },
 "voice": {
 "en": [
@@ -6478,9 +9225,14 @@
 {},
 {}
 ]
+},
+"text": {
+"en": "12 mars — L'accident date de huit mois maintenant. \r\nLe docteur parle de \"lacunes mnésiques\". Des trous. Des blancs. \r\nComme si quelqu'un avait arraché des pages entières de ma mémoire."
+},
+"speaker": "O_NARRATOR"
 }
-}
-]
+],
+"do_not_say": true
 },
 {
 "id": 3,
@@ -6495,11 +9247,15 @@
 {},
 {}
 ]
-}
+},
+"text": {
+"en": "Il y a des entrées que je ne reconnais pas. \r\nMon écriture, mais pas mes mots. \r\nComme si quelqu'un d'autre avait écrit à ma place pendant mes absences."
+},
+"speaker": "O_HERO"
 }
 ],
 "text": {
-"en": "- ...."
+"en": "- ????"
 },
 "voice": {
 "en": [
@@ -6508,7 +9264,8 @@
 {},
 {}
 ]
-}
+},
+"do_not_say": true
 }
 ],
 "speaker": "O_NARRATOR"
@@ -6543,7 +9300,7 @@
 {
 "id": 1,
 "text": {
-"en": "Sam : Assez perdu de temps. Rue des Ateliers.\r\n\r\n"
+"en": "Assez perdu de temps. Rue des Ateliers.\r\n\r\n"
 },
 "voice": {
 "en": [
@@ -6571,7 +9328,7 @@
 {
 "id": 3,
 "text": {
-"en": "Sam : On va l'avoir, ce tueur."
+"en": "On va l'avoir, ce tueur."
 },
 "voice": {
 "en": [
@@ -6592,6 +9349,549 @@
 ]
 },
 "nextID": 4
+}
+},
+{
+"sid": 44,
+"uid": "D_EXIT",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "Où voullez-vous aller ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 2,
+"choice": true,
+"text": {
+"en": "- Les alentours"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"do_not_say": true
+},
+{
+"id": 3,
+"choice": true,
+"text": {
+"en": "- La maison"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"do_not_say": true
+},
+{
+"id": 4,
+"choice": true,
+"sentences": [
+{
+"id": 5,
+"text": {
+"en": "Je vais rester encore un peu.\r\nil reste peut-être d'autre indices."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+],
+"text": {
+"en": "- Retour"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"do_not_say": true
+}
+],
+"speaker": "O_NARRATOR"
+}
+]
+},
+"nextID": 6
+}
+},
+{
+"sid": 45,
+"uid": "D_SCIENTIST",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "Alors, qui est la victime ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 2,
+"text": {
+"en": "Vik Tim."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 3,
+"text": {
+"en": "il pointe vers la victime."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 4,
+"text": {
+"en": "Hmmm... et t'as son identité ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 5,
+"text": {
+"en": "C'est ce que je viens de vous dire. Vik Tim."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 6,
+"text": {
+"en": "...Ah."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 7,
+"text": {
+"en": "C'est triste quand même."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 8,
+"text": {
+"en": "La victime ou le prénom ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 10,
+"text": {
+"en": "Les deux, chef."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 11,
+"text": {
+"en": "Si vous avez fini... j'ai aussi les témoins."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 12,
+"text": {
+"en": "Vas-y."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 13,
+"text": {
+"en": "Un certain Jean Cérien."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 14,
+"text": {
+"en": "Jean Cérien a rien vu ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 15,
+"text": {
+"en": "Si, mais il dit que c'était quelqu'un de normal."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 16,
+"text": {
+"en": "Normal comment ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 17,
+"text": {
+"en": "Normal, quoi. Jean Cérien, il voit rien d'anormal."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 18,
+"text": {
+"en": "(soupir) Et les autres ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 19,
+"text": {
+"en": "Joachim De La Vega, dit \"le Z\"."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 20,
+"text": {
+"en": "Dit \"le Z\" ?"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 21,
+"text": {
+"en": "Il a pas voulu expliquer."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 22,
+"text": {
+"en": "(soupir) Bien sûr que non."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_MOE"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_MOE"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_MOE"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_NARRATOR"
+}
+],
+"speaker": "O_SCIENTIST"
+}
+],
+"speaker": "O_HERO"
+}
+]
+},
+"nextID": 23
+}
+},
+{
+"sid": 46,
+"uid": "D_WINDOW",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "La ville ne dort jamais… elle attend.\r\nChaque lumière là-bas cache une vérité… ou un mensonge."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 2,
+"text": {
+"en": "Plus je creuse, plus tout s’emmêle. Des visages, des alibis, des détails qui collent pas…"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_HERO"
+}
+]
+},
+"nextID": 3
+}
+},
+{
+"sid": 48,
+"uid": "D_MOE",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+}
+},
+"nextID": 1
 }
 }
 ],

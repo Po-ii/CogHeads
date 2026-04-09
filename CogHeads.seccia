@@ -217,7 +217,7 @@
 }
 },
 "meta": {
-"nextAssetID": 72
+"nextAssetID": 79
 }
 },
 "puzzle": {
@@ -873,7 +873,9 @@
 "uid": "L_CRIMESCENE",
 "graph": {
 "board": {
-"nextid": 42,
+"nextid": 47,
+"x": 74,
+"y": 203,
 "boxes": [
 {
 "type": 1285,
@@ -1028,8 +1030,8 @@
 {
 "type": 1285,
 "id": 32,
-"x": 163,
-"y": 571,
+"x": 138,
+"y": 654,
 "plugs": [
 {
 "id": 33,
@@ -1046,8 +1048,8 @@
 {
 "type": 781,
 "id": 34,
-"x": 350,
-"y": 567,
+"x": 325,
+"y": 650,
 "plugs": [
 {
 "id": 35,
@@ -1078,6 +1080,43 @@
 ],
 "dialog": "D_EXIT",
 "sentence": "5"
+},
+{
+"type": 1285,
+"id": 42,
+"x": 155,
+"y": -91,
+"plugs": [
+{
+"id": 43,
+"type": 3,
+"trgs": [
+45
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CRIMESCENE",
+"label": "TRASHCAN"
+},
+{
+"type": 788,
+"id": 44,
+"x": 415,
+"y": -87,
+"plugs": [
+{
+"id": 45,
+"type": 2
+},
+{
+"id": 46,
+"type": 3
+}
+],
+"player": "P_HERO",
+"item": "I_TOPHAT",
+"silent": "False"
 }
 ]
 }
@@ -1088,17 +1127,41 @@
 "uid": "L_SURROUNDINGS",
 "graph": {
 "board": {
-"nextid": 3,
+"nextid": 8,
 "boxes": [
 {
-"type": 257,
-"id": 1,
+"type": 1285,
+"id": 3,
+"x": 215,
+"y": 316,
 "plugs": [
 {
-"id": 2,
+"id": 4,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_SURROUNDINGS"
+},
+{
+"type": 775,
+"id": 5,
+"x": 449,
+"y": 318,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
 "type": 3
 }
-]
+],
+"scene": "S_CRIMESCENE"
 }
 ]
 }
@@ -1119,8 +1182,8 @@
 "graph": {
 "board": {
 "nextid": 255,
-"x": 278,
-"y": 58,
+"x": 217,
+"y": -19,
 "boxes": [
 {
 "type": 776,
@@ -1636,6 +1699,15 @@
 ]
 }
 ]
+}
+}
+},
+{
+"sid": 78,
+"uid": "L_INTERROGATION_ROOM_K",
+"graph": {
+"board": {
+"nextid": 3
 }
 }
 }
@@ -6489,7 +6561,10 @@
 },
 {
 "col": 23,
-"row": 44
+"row": 44,
+"link_sel_instance": {
+"instance": "MOE"
+}
 },
 {
 "col": 23,
@@ -6529,15 +6604,7 @@
 },
 {
 "col": 19,
-"row": 45
-},
-{
-"col": 19,
 "row": 46
-},
-{
-"col": 18,
-"row": 45
 },
 {
 "col": 18,
@@ -6545,179 +6612,7 @@
 },
 {
 "col": 17,
-"row": 45
-},
-{
-"col": 17,
 "row": 46
-},
-{
-"col": 17,
-"row": 44
-},
-{
-"col": 18,
-"row": 44
-},
-{
-"col": 16,
-"row": 44
-},
-{
-"col": 16,
-"row": 45
-},
-{
-"col": 15,
-"row": 44
-},
-{
-"col": 15,
-"row": 45
-},
-{
-"col": 14,
-"row": 44
-},
-{
-"col": 14,
-"row": 45
-},
-{
-"col": 13,
-"row": 44
-},
-{
-"col": 13,
-"row": 45
-},
-{
-"col": 13,
-"row": 43
-},
-{
-"col": 14,
-"row": 43
-},
-{
-"col": 12,
-"row": 43
-},
-{
-"col": 12,
-"row": 44
-},
-{
-"col": 12,
-"row": 42
-},
-{
-"col": 13,
-"row": 42
-},
-{
-"col": 11,
-"row": 42
-},
-{
-"col": 11,
-"row": 43
-},
-{
-"col": 11,
-"row": 41
-},
-{
-"col": 12,
-"row": 41
-},
-{
-"col": 10,
-"row": 41
-},
-{
-"col": 10,
-"row": 42
-},
-{
-"col": 10,
-"row": 40
-},
-{
-"col": 11,
-"row": 40
-},
-{
-"col": 10,
-"row": 39
-},
-{
-"col": 11,
-"row": 39
-},
-{
-"col": 9,
-"row": 39
-},
-{
-"col": 9,
-"row": 40
-},
-{
-"col": 12,
-"row": 40
-},
-{
-"col": 13,
-"row": 40
-},
-{
-"col": 13,
-"row": 41
-},
-{
-"col": 14,
-"row": 41
-},
-{
-"col": 14,
-"row": 42
-},
-{
-"col": 15,
-"row": 42
-},
-{
-"col": 15,
-"row": 43
-},
-{
-"col": 16,
-"row": 42
-},
-{
-"col": 16,
-"row": 43
-},
-{
-"col": 17,
-"row": 43
-},
-{
-"col": 18,
-"row": 43
-},
-{
-"col": 19,
-"row": 43
-},
-{
-"col": 19,
-"row": 44
-},
-{
-"col": 20,
-"row": 43
 },
 {
 "col": 20,
@@ -6742,122 +6637,6 @@
 {
 "col": 22,
 "row": 43
-},
-{
-"col": 20,
-"row": 42
-},
-{
-"col": 21,
-"row": 42
-},
-{
-"col": 19,
-"row": 42
-},
-{
-"col": 19,
-"row": 41
-},
-{
-"col": 20,
-"row": 41
-},
-{
-"col": 18,
-"row": 41
-},
-{
-"col": 18,
-"row": 42
-},
-{
-"col": 18,
-"row": 40
-},
-{
-"col": 19,
-"row": 40
-},
-{
-"col": 17,
-"row": 40
-},
-{
-"col": 17,
-"row": 41
-},
-{
-"col": 16,
-"row": 40
-},
-{
-"col": 16,
-"row": 41
-},
-{
-"col": 16,
-"row": 39
-},
-{
-"col": 17,
-"row": 39
-},
-{
-"col": 15,
-"row": 39
-},
-{
-"col": 15,
-"row": 40
-},
-{
-"col": 14,
-"row": 39
-},
-{
-"col": 14,
-"row": 40
-},
-{
-"col": 14,
-"row": 38
-},
-{
-"col": 15,
-"row": 38
-},
-{
-"col": 13,
-"row": 38
-},
-{
-"col": 13,
-"row": 39
-},
-{
-"col": 12,
-"row": 39
-},
-{
-"col": 15,
-"row": 41
-},
-{
-"col": 17,
-"row": 42
-},
-{
-"col": 21,
-"row": 41
-},
-{
-"col": 22,
-"row": 41
-},
-{
-"col": 22,
-"row": 42
 },
 {
 "col": 23,
@@ -6892,84 +6671,19 @@
 "row": 41
 },
 {
-"col": 22,
-"row": 40
-},
-{
 "col": 23,
 "row": 40
 },
 {
-"col": 21,
-"row": 40
-},
-{
-"col": 20,
-"row": 40
-},
-{
-"col": 20,
-"row": 39
-},
-{
-"col": 21,
-"row": 39
-},
-{
-"col": 19,
-"row": 39
-},
-{
-"col": 18,
-"row": 39
-},
-{
-"col": 18,
-"row": 38
-},
-{
-"col": 19,
-"row": 38
-},
-{
-"col": 20,
-"row": 38
-},
-{
-"col": 19,
-"row": 37
-},
-{
-"col": 20,
-"row": 37
-},
-{
-"col": 21,
-"row": 37
-},
-{
-"col": 21,
-"row": 38
-},
-{
-"col": 22,
-"row": 37
-},
-{
-"col": 22,
-"row": 38
-},
-{
 "col": 23,
-"row": 37
+"row": 37,
+"link_sel_label": {
+"label": "TRASHCAN"
+}
 },
 {
 "col": 23,
 "row": 38
-},
-{
-"col": 22,
-"row": 39
 },
 {
 "col": 23,
@@ -6988,40 +6702,80 @@
 "row": 41
 },
 {
+"col": 16,
+"row": 46
+},
+{
+"col": 17,
+"row": 45
+},
+{
 "col": 18,
-"row": 37
+"row": 45
 },
 {
-"col": 17,
-"row": 37
+"col": 18,
+"row": 44
 },
 {
-"col": 17,
+"col": 19,
+"row": 44
+},
+{
+"col": 19,
+"row": 45
+},
+{
+"col": 19,
+"row": 43
+},
+{
+"col": 20,
+"row": 42
+},
+{
+"col": 20,
+"row": 41
+},
+{
+"col": 20,
+"row": 40
+},
+{
+"col": 21,
+"row": 40
+},
+{
+"col": 21,
+"row": 41
+},
+{
+"col": 21,
+"row": 42
+},
+{
+"col": 22,
+"row": 41
+},
+{
+"col": 22,
+"row": 40
+},
+{
+"col": 20,
+"row": 43
+},
+{
+"col": 22,
+"row": 42
+},
+{
+"col": 22,
+"row": 39
+},
+{
+"col": 22,
 "row": 38
-},
-{
-"col": 16,
-"row": 37
-},
-{
-"col": 16,
-"row": 38
-},
-{
-"col": 14,
-"row": 46
-},
-{
-"col": 15,
-"row": 46
-},
-{
-"col": 13,
-"row": 46
-},
-{
-"col": 16,
-"row": 46
 }
 ]
 },
@@ -7233,10 +6987,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 90,
+"zoom": 74,
 "nextID": 6,
-"x": 257,
-"y": 96
+"x": -61,
+"y": 90
 },
 "layers": {
 "BACK": {
@@ -7447,7 +7201,10 @@
 },
 {
 "col": 22,
-"row": 35
+"row": 35,
+"link_sel_label": {
+"label": "CRIMESCENE"
+}
 },
 {
 "col": 22,
@@ -7580,13 +7337,6 @@
 {
 "col": 27,
 "row": 39
-},
-{
-"col": 27,
-"row": 40,
-"link_sel_instance": {
-"instance": "MOE"
-}
 },
 {
 "col": 27,
@@ -9280,46 +9030,6 @@
 "row": 30
 },
 {
-"col": 67,
-"row": 29
-},
-{
-"col": 68,
-"row": 29
-},
-{
-"col": 69,
-"row": 29
-},
-{
-"col": 70,
-"row": 29
-},
-{
-"col": 71,
-"row": 29
-},
-{
-"col": 68,
-"row": 28
-},
-{
-"col": 69,
-"row": 28
-},
-{
-"col": 70,
-"row": 28
-},
-{
-"col": 71,
-"row": 28
-},
-{
-"col": 67,
-"row": 28
-},
-{
 "col": 66,
 "row": 29
 },
@@ -9376,191 +9086,7 @@
 "row": 29
 },
 {
-"col": 65,
-"row": 28
-},
-{
-"col": 66,
-"row": 28
-},
-{
-"col": 66,
-"row": 27
-},
-{
-"col": 67,
-"row": 27
-},
-{
-"col": 68,
-"row": 27
-},
-{
-"col": 69,
-"row": 27
-},
-{
-"col": 70,
-"row": 27
-},
-{
-"col": 67,
-"row": 26
-},
-{
-"col": 68,
-"row": 26
-},
-{
-"col": 69,
-"row": 26
-},
-{
-"col": 70,
-"row": 26
-},
-{
-"col": 71,
-"row": 26
-},
-{
-"col": 71,
-"row": 27
-},
-{
-"col": 72,
-"row": 26
-},
-{
-"col": 72,
-"row": 27
-},
-{
-"col": 72,
-"row": 28
-},
-{
-"col": 72,
-"row": 29
-},
-{
-"col": 69,
-"row": 25
-},
-{
-"col": 70,
-"row": 25
-},
-{
-"col": 71,
-"row": 25
-},
-{
-"col": 72,
-"row": 25
-},
-{
-"col": 73,
-"row": 25
-},
-{
-"col": 73,
-"row": 26
-},
-{
-"col": 73,
-"row": 27
-},
-{
-"col": 73,
-"row": 28
-},
-{
 "col": 74,
-"row": 25
-},
-{
-"col": 74,
-"row": 26
-},
-{
-"col": 74,
-"row": 27
-},
-{
-"col": 74,
-"row": 28
-},
-{
-"col": 71,
-"row": 24
-},
-{
-"col": 72,
-"row": 24
-},
-{
-"col": 73,
-"row": 24
-},
-{
-"col": 74,
-"row": 24
-},
-{
-"col": 75,
-"row": 24
-},
-{
-"col": 75,
-"row": 25
-},
-{
-"col": 75,
-"row": 26
-},
-{
-"col": 75,
-"row": 27
-},
-{
-"col": 76,
-"row": 24
-},
-{
-"col": 76,
-"row": 25
-},
-{
-"col": 76,
-"row": 26
-},
-{
-"col": 76,
-"row": 27
-},
-{
-"col": 75,
-"row": 28
-},
-{
-"col": 76,
-"row": 28
-},
-{
-"col": 73,
-"row": 29
-},
-{
-"col": 74,
-"row": 29
-},
-{
-"col": 75,
-"row": 29
-},
-{
-"col": 76,
 "row": 29
 },
 {
@@ -9578,18 +9104,6 @@
 {
 "col": 76,
 "row": 30
-},
-{
-"col": 77,
-"row": 27
-},
-{
-"col": 77,
-"row": 28
-},
-{
-"col": 77,
-"row": 29
 },
 {
 "col": 77,
@@ -9605,10 +9119,6 @@
 },
 {
 "col": 78,
-"row": 29
-},
-{
-"col": 78,
 "row": 30
 },
 {
@@ -9620,14 +9130,6 @@
 "row": 32
 },
 {
-"col": 78,
-"row": 28
-},
-{
-"col": 79,
-"row": 28
-},
-{
 "col": 79,
 "row": 29
 },
@@ -9641,10 +9143,6 @@
 },
 {
 "col": 80,
-"row": 28
-},
-{
-"col": 80,
 "row": 29
 },
 {
@@ -9654,26 +9152,6 @@
 {
 "col": 80,
 "row": 31
-},
-{
-"col": 78,
-"row": 27
-},
-{
-"col": 79,
-"row": 27
-},
-{
-"col": 80,
-"row": 27
-},
-{
-"col": 81,
-"row": 27
-},
-{
-"col": 81,
-"row": 28
 },
 {
 "col": 81,
@@ -9967,10 +9445,6 @@
 "row": 28
 },
 {
-"col": 64,
-"row": 28
-},
-{
 "col": 26,
 "row": 37
 },
@@ -10097,114 +9571,6 @@
 {
 "col": 81,
 "row": 31
-},
-{
-"col": 77,
-"row": 26
-},
-{
-"col": 78,
-"row": 26
-},
-{
-"col": 77,
-"row": 25
-},
-{
-"col": 78,
-"row": 25
-},
-{
-"col": 79,
-"row": 25
-},
-{
-"col": 79,
-"row": 26
-},
-{
-"col": 77,
-"row": 24
-},
-{
-"col": 78,
-"row": 24
-},
-{
-"col": 79,
-"row": 24
-},
-{
-"col": 80,
-"row": 24
-},
-{
-"col": 80,
-"row": 25
-},
-{
-"col": 80,
-"row": 26
-},
-{
-"col": 64,
-"row": 27
-},
-{
-"col": 65,
-"row": 27
-},
-{
-"col": 65,
-"row": 26
-},
-{
-"col": 66,
-"row": 26
-},
-{
-"col": 68,
-"row": 25
-},
-{
-"col": 69,
-"row": 24
-},
-{
-"col": 70,
-"row": 24
-},
-{
-"col": 70,
-"row": 23
-},
-{
-"col": 71,
-"row": 23
-},
-{
-"col": 72,
-"row": 23
-},
-{
-"col": 73,
-"row": 23
-},
-{
-"col": 74,
-"row": 23
-},
-{
-"col": 75,
-"row": 23
-},
-{
-"col": 76,
-"row": 23
-},
-{
-"col": 77,
-"row": 23
 },
 {
 "col": 60,
@@ -10357,6 +9723,10 @@
 {
 "col": 64,
 "row": 46
+},
+{
+"col": 27,
+"row": 40
 }
 ]
 },
@@ -10405,59 +9775,6 @@
 "parallax": 100,
 "title": {
 "en": "Jean Cérien"
-},
-"opacity": 100,
-"light_ambient": 255,
-"light_diffuse": 16777215,
-"light_angle": 30,
-"light_dist": -1,
-"grids": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-],
-"paths": [
-{},
-{},
-{},
-{},
-{},
-{},
-{},
-{}
-]
-},
-{
-"name": "MOE",
-"depths": [
-{
-"a": 65,
-"b": 100
-},
-{
-"y": 752,
-"a": 65,
-"b": 100
-}
-],
-"uid": "O_MOE",
-"id": 4,
-"tags": [
-"",
-"",
-"",
-""
-],
-"x": 452,
-"y": 559,
-"parallax": 100,
-"title": {
-"en": "Moe Ronn"
 },
 "opacity": 100,
 "light_ambient": 255,
@@ -10704,7 +10021,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 59,
+"zoom": 69,
 "nextID": 4,
 "x": -86,
 "y": 67
@@ -10896,7 +10213,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 49,
+"zoom": 69,
 "nextID": 20,
 "x": -124,
 "y": -101
@@ -11502,6 +10819,198 @@
 "parallax": 100,
 "opacity": 20,
 "drag": "Target",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+]
+},
+{
+"sid": 77,
+"uid": "S_INTERROGATION_ROOM_K",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 69,
+"nextID": 4,
+"x": -86,
+"y": 67
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "167e9f0990c28f81"
+},
+"texture": {
+"width": 1380,
+"height": 752,
+"rects": [
+{
+"w": 1380,
+"h": 752
+}
+],
+"textures": [
+{
+"aid": "344c98d57e671008"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 685,
+"y": 1116,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ALEJANDRO_BUST",
+"depths": [
+{
+"a": 60,
+"b": 100
+},
+{
+"y": 752,
+"a": 60,
+"b": 100
+}
+],
+"uid": "O_ALEJANDRO_BUST",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 671,
+"y": 514,
+"parallax": 100,
+"opacity": 100,
 "light_ambient": 255,
 "light_diffuse": 16777215,
 "light_angle": 30,
@@ -14774,6 +14283,120 @@
 "loop_count": -1
 }
 ]
+},
+{
+"sid": 72,
+"uid": "O_KIRA",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
 }
 ],
 "players": [
@@ -15936,15 +15559,137 @@
 }
 },
 {
-"sid": 69,
-"uid": "D_ALEJANDRO",
+"sid": 70,
+"uid": "D_JEAN",
 "content": {
-"nextID": 1
+"nextID": 1,
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+}
+}
 }
 },
 {
-"sid": 70,
-"uid": "D_JEAN",
+"sid": 74,
+"uid": "D_ALEJANDRO",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "Bonjour Alejandro. Nous devons vous poser quelques questions au sujet de la nuit dernière."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 2,
+"text": {
+"en": "Ah, me voilà !\r\nPrêt à tout raconter… mais je vous préviens, je suis plutôt un garçon sage, vous allez voir !"
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_ALEJANDRO_BUST"
+}
+],
+"speaker": "O_HERO"
+},
+{
+"id": 3,
+"text": {
+"en": " Bonjour… on peut vous poser quelques questions ?"
+},
+"sentences": [
+{
+"id": 5,
+"text": {
+"en": " Ha ! Mais bien sûr ! \r\nJ’adore quand on me demande mon avis !"
+},
+"sentences": [
+{
+"id": 6,
+"text": {
+"en": "Votre nom, déjà ?"
+},
+"sentences": [
+{
+"id": 7,
+"text": {
+"en": "Alejandro De La Vega ! Mais pour les intimes, \"le Z\". \r\nOui, oui, je sais, ça claque, non ?"
+},
+"sentences": [
+{
+"id": 8,
+"text": {
+"en": "Très bien, Alejandro…\r\nVous avez remarqué quelque chose d’inhabituel ce soir ?"
+},
+"sentences": [
+{
+"id": 9,
+"text": {
+"en": "Oh oui ! Un type mystérieux…\r\nvous savez ce qu’il avait dans les mains ? Un… scalpel !\r\nOui, parfaitement tranchant, précis comme un chirurgien !\r\nFascinant, non ?\r\n"
+},
+"sentences": [
+{
+"id": 10,
+"text": {
+"en": "…Vous êtes sûr ?"
+},
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_ALEJANDRO"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_ALEJANDRO"
+}
+],
+"speaker": "O_HERO"
+}
+],
+"speaker": "O_ALEJANDRO"
+}
+],
+"speaker": "O_HERO"
+}
+]
+},
+"nextID": 11
+}
+},
+{
+"sid": 76,
+"uid": "D_TRASHCAN",
 "content": {
 "nextID": 1
 }
@@ -15988,6 +15733,23 @@
 },
 "texture": {
 "aid": "cde3963d9ed1775a"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 75,
+"uid": "I_TOPHAT",
+"icons": [
+{
+"image": {
+"aid": "592435fcddb46469"
+},
+"texture": {
+"aid": "e937dd4274729e2a"
 }
 },
 {},

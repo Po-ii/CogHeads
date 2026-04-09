@@ -217,12 +217,12 @@
 }
 },
 "meta": {
-"nextAssetID": 54
+"nextAssetID": 68
 }
 },
 "puzzle": {
 "board": {
-"nextid": 11,
+"nextid": 35,
 "x": 531,
 "y": 439,
 "boxes": [
@@ -235,7 +235,7 @@
 "id": 2,
 "type": 3,
 "trgs": [
-6
+12
 ]
 }
 ]
@@ -244,7 +244,8 @@
 "type": 260,
 "id": 3,
 "name": "end",
-"x": 200,
+"x": 860,
+"y": -9,
 "plugs": [
 {
 "id": 4,
@@ -253,20 +254,166 @@
 ]
 },
 {
-"type": 256,
-"id": 5,
-"name": "#puzzle",
-"x": 100,
+"type": 258,
+"id": 11,
+"name": "#enigme",
+"x": 161,
+"y": -12,
 "plugs": [
 {
-"id": 6,
+"id": 12,
 "type": 2
 },
 {
-"id": 7,
+"id": 13,
+"type": 3,
+"trgs": [
+18,
+21,
+24,
+27,
+30,
+33
+]
+}
+]
+},
+{
+"type": 262,
+"id": 14,
+"name": "#enigme",
+"x": 623,
+"y": -5,
+"plugs": [
+{
+"id": 15,
+"type": 2
+},
+{
+"id": 16,
 "type": 3,
 "trgs": [
 4
+]
+}
+]
+},
+{
+"type": 256,
+"id": 17,
+"name": "#piece1_ok",
+"x": 343,
+"y": -235,
+"plugs": [
+{
+"id": 18,
+"type": 2
+},
+{
+"id": 19,
+"type": 3,
+"trgs": [
+15
+]
+}
+]
+},
+{
+"type": 256,
+"id": 20,
+"name": "#piece2_ok",
+"x": 344,
+"y": -139,
+"plugs": [
+{
+"id": 21,
+"type": 2
+},
+{
+"id": 22,
+"type": 3,
+"trgs": [
+15
+]
+}
+]
+},
+{
+"type": 256,
+"id": 23,
+"name": "#piece3_ok",
+"x": 346,
+"y": -34,
+"plugs": [
+{
+"id": 24,
+"type": 2
+},
+{
+"id": 25,
+"type": 3,
+"trgs": [
+15
+]
+}
+]
+},
+{
+"type": 256,
+"id": 26,
+"name": "#piece4_ok",
+"x": 348,
+"y": 69,
+"plugs": [
+{
+"id": 27,
+"type": 2
+},
+{
+"id": 28,
+"type": 3,
+"trgs": [
+15
+]
+}
+]
+},
+{
+"type": 256,
+"id": 29,
+"name": "#piece5_ok",
+"x": 347,
+"y": 147,
+"plugs": [
+{
+"id": 30,
+"type": 2
+},
+{
+"id": 31,
+"type": 3,
+"trgs": [
+15
+]
+}
+]
+},
+{
+"type": 256,
+"id": 32,
+"name": "#piece6_ok",
+"x": 346,
+"y": 233,
+"plugs": [
+{
+"id": 33,
+"type": 2
+},
+{
+"id": 34,
+"type": 3,
+"trgs": [
+15
 ]
 }
 ]
@@ -963,6 +1110,511 @@
 "graph": {
 "board": {
 "nextid": 3
+}
+}
+},
+{
+"sid": 67,
+"uid": "L_ENIGME_ENFANT",
+"graph": {
+"board": {
+"nextid": 255,
+"x": 278,
+"y": 58,
+"boxes": [
+{
+"type": 776,
+"id": 17,
+"x": 251,
+"y": 44,
+"plugs": [
+{
+"id": 18,
+"type": 2
+},
+{
+"id": 19,
+"type": 3,
+"trgs": [
+224
+]
+}
+],
+"scene": "S_ENIGME_ENFANT",
+"instance": "ZONE1",
+"loop": "0"
+},
+{
+"type": 780,
+"id": 107,
+"x": 716,
+"y": 54,
+"plugs": [
+{
+"id": 108,
+"type": 2
+},
+{
+"id": 109,
+"type": 3
+}
+],
+"puzzle": "#piece1_ok"
+},
+{
+"type": 776,
+"id": 112,
+"x": 244,
+"y": 192,
+"plugs": [
+{
+"id": 113,
+"type": 2
+},
+{
+"id": 114,
+"type": 3,
+"trgs": [
+227
+]
+}
+],
+"scene": "S_ENIGME_ENFANT",
+"instance": "ZONE2",
+"loop": "0"
+},
+{
+"type": 780,
+"id": 115,
+"x": 736,
+"y": 213,
+"plugs": [
+{
+"id": 116,
+"type": 2
+},
+{
+"id": 117,
+"type": 3
+}
+],
+"puzzle": "#piece2_ok"
+},
+{
+"type": 776,
+"id": 120,
+"x": 270,
+"y": 322,
+"plugs": [
+{
+"id": 121,
+"type": 2
+},
+{
+"id": 122,
+"type": 3,
+"trgs": [
+230
+]
+}
+],
+"scene": "S_ENIGME_ENFANT",
+"instance": "ZONE3",
+"loop": "0"
+},
+{
+"type": 780,
+"id": 123,
+"x": 744,
+"y": 334,
+"plugs": [
+{
+"id": 124,
+"type": 2
+},
+{
+"id": 125,
+"type": 3
+}
+],
+"puzzle": "#piece3_ok"
+},
+{
+"type": 776,
+"id": 128,
+"x": 284,
+"y": 463,
+"plugs": [
+{
+"id": 129,
+"type": 2
+},
+{
+"id": 130,
+"type": 3,
+"trgs": [
+233
+]
+}
+],
+"scene": "S_ENIGME_ENFANT",
+"instance": "ZONE4",
+"loop": "0"
+},
+{
+"type": 780,
+"id": 131,
+"x": 733,
+"y": 504,
+"plugs": [
+{
+"id": 132,
+"type": 2
+},
+{
+"id": 133,
+"type": 3
+}
+],
+"puzzle": "#piece4_ok"
+},
+{
+"type": 776,
+"id": 136,
+"x": 250,
+"y": 592,
+"plugs": [
+{
+"id": 137,
+"type": 2
+},
+{
+"id": 138,
+"type": 3,
+"trgs": [
+236
+]
+}
+],
+"scene": "S_ENIGME_ENFANT",
+"instance": "ZONE5",
+"loop": "0"
+},
+{
+"type": 780,
+"id": 139,
+"x": 742,
+"y": 614,
+"plugs": [
+{
+"id": 140,
+"type": 2
+},
+{
+"id": 141,
+"type": 3
+}
+],
+"puzzle": "#piece5_ok"
+},
+{
+"type": 776,
+"id": 144,
+"x": 286,
+"y": 718,
+"plugs": [
+{
+"id": 145,
+"type": 2
+},
+{
+"id": 146,
+"type": 3,
+"trgs": [
+239
+]
+}
+],
+"scene": "S_ENIGME_ENFANT",
+"instance": "ZONE6",
+"loop": "0"
+},
+{
+"type": 780,
+"id": 147,
+"x": 734,
+"y": 719,
+"plugs": [
+{
+"id": 148,
+"type": 2
+},
+{
+"id": 149,
+"type": 3
+}
+],
+"puzzle": "#piece6_ok"
+},
+{
+"type": 786,
+"id": 223,
+"x": 471,
+"y": 48,
+"plugs": [
+{
+"id": 224,
+"type": 2
+},
+{
+"id": 225,
+"type": 3,
+"trgs": [
+108
+]
+}
+],
+"visible": "True",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART1",
+"cursor": "False"
+},
+{
+"type": 786,
+"id": 226,
+"x": 484,
+"y": 208,
+"plugs": [
+{
+"id": 227,
+"type": 2
+},
+{
+"id": 228,
+"type": 3,
+"trgs": [
+116
+]
+}
+],
+"visible": "True",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART2",
+"cursor": "False"
+},
+{
+"type": 786,
+"id": 229,
+"x": 519,
+"y": 355,
+"plugs": [
+{
+"id": 230,
+"type": 2
+},
+{
+"id": 231,
+"type": 3,
+"trgs": [
+124
+]
+}
+],
+"visible": "True",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART3",
+"cursor": "False"
+},
+{
+"type": 786,
+"id": 232,
+"x": 522,
+"y": 484,
+"plugs": [
+{
+"id": 233,
+"type": 2
+},
+{
+"id": 234,
+"type": 3,
+"trgs": [
+132
+]
+}
+],
+"visible": "True",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART4",
+"cursor": "False"
+},
+{
+"type": 786,
+"id": 235,
+"x": 499,
+"y": 603,
+"plugs": [
+{
+"id": 236,
+"type": 2
+},
+{
+"id": 237,
+"type": 3,
+"trgs": [
+140
+]
+}
+],
+"visible": "True",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART5",
+"cursor": "False"
+},
+{
+"type": 786,
+"id": 238,
+"x": 497,
+"y": 730,
+"plugs": [
+{
+"id": 239,
+"type": 2
+},
+{
+"id": 240,
+"type": 3,
+"trgs": [
+148
+]
+}
+],
+"visible": "True",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART6",
+"cursor": "False"
+},
+{
+"type": 1296,
+"id": 243,
+"x": -25,
+"y": 38,
+"plugs": [
+{
+"id": 244,
+"type": 3,
+"trgs": [
+18
+]
+}
+],
+"script": "pos_in_pixels S_ENIGME_ENFANT ZONE1 varX varY\r\nmove_in_pixels S_ENIGME_ENFANT ENIGME_ENFANT_PART1 $varX $varY\r\ndisable S_ENIGME_ENFANT ENIGME_ENFANT_PART1\r\nset piece1_ok \"1\"",
+"var_cmp": "==",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART1",
+"instance2": "ZONE1"
+},
+{
+"type": 1296,
+"id": 245,
+"x": -60,
+"y": 171,
+"plugs": [
+{
+"id": 246,
+"type": 3,
+"trgs": [
+113
+]
+}
+],
+"script": "pos_in_pixels S_ENIGME_ENFANT ZONE2 varX varY\r\nmove_in_pixels S_ENIGME_ENFANT ENIGME_ENFANT_PART2 $varX $varY\r\ndisable S_ENIGME_ENFANT ENIGME_ENFANT_PART2\r\nset piece2_ok \"1\"",
+"var_cmp": "==",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART2",
+"instance2": "ZONE2"
+},
+{
+"type": 1296,
+"id": 247,
+"x": -61,
+"y": 288,
+"plugs": [
+{
+"id": 248,
+"type": 3,
+"trgs": [
+121
+]
+}
+],
+"script": "pos_in_pixels S_ENIGME_ENFANT ZONE3 varX varY\r\nmove_in_pixels S_ENIGME_ENFANT ENIGME_ENFANT_PART3 $varX $varY\r\ndisable S_ENIGME_ENFANT ENIGME_ENFANT_PART3\r\nset piece3_ok \"1\"",
+"var_cmp": "==",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART3",
+"instance2": "ZONE3"
+},
+{
+"type": 1296,
+"id": 249,
+"x": -82,
+"y": 427,
+"plugs": [
+{
+"id": 250,
+"type": 3,
+"trgs": [
+129
+]
+}
+],
+"script": "pos_in_pixels S_ENIGME_ENFANT ZONE4 varX varY\r\nmove_in_pixels S_ENIGME_ENFANT ENIGME_ENFANT_PART4 $varX $varY\r\ndisable S_ENIGME_ENFANT ENIGME_ENFANT_PART4\r\nset piece4_ok \"1\"",
+"var_cmp": "==",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART4",
+"instance2": "ZONE4"
+},
+{
+"type": 1296,
+"id": 251,
+"x": -76,
+"y": 570,
+"plugs": [
+{
+"id": 252,
+"type": 3,
+"trgs": [
+137
+]
+}
+],
+"script": "pos_in_pixels S_ENIGME_ENFANT ZONE5 varX varY\r\nmove_in_pixels S_ENIGME_ENFANT ENIGME_ENFANT_PART5 $varX $varY\r\ndisable S_ENIGME_ENFANT ENIGME_ENFANT_PART5\r\nset piece5_ok \"1\"",
+"var_cmp": "==",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART5",
+"instance2": "ZONE5"
+},
+{
+"type": 1296,
+"id": 253,
+"x": -64,
+"y": 709,
+"plugs": [
+{
+"id": 254,
+"type": 3,
+"trgs": [
+145
+]
+}
+],
+"script": "pos_in_pixels S_ENIGME_ENFANT ZONE6 varX varY\r\nmove_in_pixels S_ENIGME_ENFANT ENIGME_ENFANT_PART6 $varX $varY\r\ndisable S_ENIGME_ENFANT ENIGME_ENFANT_PART6\r\nset piece6_ok \"1\"",
+"var_cmp": "==",
+"scene": "S_ENIGME_ENFANT",
+"instance": "ENIGME_ENFANT_PART6",
+"instance2": "ZONE6"
+}
+]
 }
 }
 }
@@ -7007,6 +7659,645 @@
 ]
 }
 ]
+},
+{
+"sid": 66,
+"uid": "S_ENIGME_ENFANT",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 53,
+"nextID": 20,
+"x": -124,
+"y": -101
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "ENIGME_ENFANT_PART3",
+"uid": "O_ENIGME_ENFANT_PART3",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1800,
+"y": 215,
+"parallax": 100,
+"opacity": 100,
+"drag": "Source",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ENIGME_ENFANT_PART4",
+"uid": "O_ENIGME_ENFANT_PART4",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1588,
+"y": 184,
+"parallax": 100,
+"opacity": 100,
+"drag": "Source",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ENIGME_ENFANT_PART5",
+"uid": "O_ENIGME_ENFANT_PART5",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1441,
+"y": 148,
+"parallax": 100,
+"opacity": 100,
+"drag": "Source",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ENIGME_ENFANT_PART6",
+"uid": "O_ENIGME_ENFANT_PART6",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1237,
+"y": 131,
+"parallax": 100,
+"opacity": 100,
+"drag": "Source",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ZONE3",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1072,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_ZONE3",
+"id": 9,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1774,
+"y": 752,
+"parallax": 100,
+"opacity": 20,
+"drag": "Target",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ZONE4",
+"uid": "O_ZONE4",
+"id": 10,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 141,
+"y": 775,
+"parallax": 100,
+"opacity": 20,
+"drag": "Target",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ZONE5",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1072,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_ZONE5",
+"id": 11,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 477,
+"y": 695,
+"parallax": 100,
+"opacity": 20,
+"drag": "Target",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ZONE6",
+"uid": "O_ZONE6",
+"id": 12,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1562,
+"y": 756,
+"parallax": 100,
+"opacity": 20,
+"drag": "Target",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "HERO",
+"uid": "O_HERO",
+"id": 13,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1909,
+"y": 561,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ENIGME_ENFANT_PART1",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1072,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_ENIGME_ENFANT_PART1",
+"id": 14,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 266,
+"y": 247,
+"parallax": 100,
+"placement": "MASK C",
+"opacity": 100,
+"drag": "Source",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ZONE1",
+"uid": "O_ZONE1",
+"id": 15,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1299,
+"y": 775,
+"parallax": 100,
+"placement": "MASK D",
+"opacity": 20,
+"drag": "Target",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ENIGME_ENFANT_PART2",
+"uid": "O_ENIGME_ENFANT_PART2",
+"id": 16,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 764,
+"y": 225,
+"parallax": 100,
+"opacity": 100,
+"drag": "Source",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "ZONE2",
+"uid": "O_ZONE2",
+"id": 17,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 881,
+"y": 783,
+"parallax": 100,
+"opacity": 20,
+"drag": "Target",
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+]
 }
 ],
 "objects": [
@@ -8733,6 +10024,1526 @@
 }
 ]
 }
+},
+{
+"sid": 54,
+"uid": "O_ENIGME_ENFANT_PART1",
+"content": {
+"bbox": true,
+"width": 291,
+"height": 331,
+"x": 150,
+"y": 153
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "bac9f1595813ba79"
+},
+"lo": {
+"aid": "2a96f8ca78478dd8"
+}
+},
+"w": 291,
+"h": 331
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 291,
+"h": 331
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "80fd3458bad5358c"
+},
+"texture": {
+"aid": "44a76e4890ce2a4f"
+}
+}
+]
+}
+},
+{
+"sid": 55,
+"uid": "O_ENIGME_ENFANT_PART2",
+"content": {
+"bbox": true,
+"width": 341,
+"height": 341,
+"x": 173,
+"y": 169
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "deec4c0505705f1f"
+},
+"lo": {
+"aid": "aea733494b58f9fe"
+}
+},
+"w": 341,
+"h": 341
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 341,
+"h": 341
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "779cf56aedb9944f"
+},
+"texture": {
+"aid": "213f9941124b7fab"
+}
+}
+]
+}
+},
+{
+"sid": 56,
+"uid": "O_ENIGME_ENFANT_PART3",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 57,
+"uid": "O_ENIGME_ENFANT_PART4",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 58,
+"uid": "O_ENIGME_ENFANT_PART5",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 59,
+"uid": "O_ENIGME_ENFANT_PART6",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 60,
+"uid": "O_ZONE1",
+"content": {
+"bbox": true,
+"width": 341,
+"height": 341,
+"x": 168,
+"y": 165
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "9e1e818b138c5769"
+},
+"lo": {
+"aid": "d7a410e5cae11e4d"
+}
+},
+"w": 341,
+"h": 341
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 341,
+"h": 341
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "1cd82b873b55f2f5"
+},
+"texture": {
+"aid": "bf0f18b6d6ccee27"
+}
+}
+]
+}
+},
+{
+"sid": 61,
+"uid": "O_ZONE2",
+"content": {
+"bbox": true,
+"width": 316,
+"height": 365,
+"x": 159,
+"y": 182
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "b9693b20a9de057c"
+},
+"lo": {
+"aid": "3a2efc73b4e5a2c5"
+}
+},
+"w": 316,
+"h": 365
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 316,
+"h": 365
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "d11099825e160f3f"
+},
+"texture": {
+"aid": "62f6fa75237382ac"
+}
+}
+]
+}
+},
+{
+"sid": 62,
+"uid": "O_ZONE3",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 63,
+"uid": "O_ZONE4",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 64,
+"uid": "O_ZONE5",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
+},
+{
+"sid": 65,
+"uid": "O_ZONE6",
+"content": {
+"bbox": true
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+]
 }
 ],
 "players": [
@@ -8744,7 +11555,7 @@
 "zoom_smooth": 50,
 "path_color": -1,
 "object": "O_HERO",
-"scene": "S_INTERROGATION_ROOM_J"
+"scene": "S_ENIGME_ENFANT"
 },
 "icons": [
 {
